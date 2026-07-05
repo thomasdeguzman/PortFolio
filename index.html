@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio personnel de Thomas DE GUZMAN, étudiant ingénieur en mécanique des fluides, CFD et simulation numérique."
+    />
+    <title>Thomas DE GUZMAN | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="#home" class="logo">Thomas DE GUZMAN</a>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+          <a href="#home">Accueil</a>
+          <a href="#projects-students">Projets étudiants</a>
+          <a href="#projects-personal">Projets personnels</a>
+          <a href="#about">À propos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <h1>Thomas DE GUZMAN</h1>
+            <h2>Étudiant ingénieur en mécanique des fluides, CFD et simulation numérique</h2>
+            <p class="hero-location">SeaTech – Université de Toulon</p>
+            <p class="hero-email">thomas.deguzman33@gmail.com</p>
+            <div class="hero-links">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+            <p class="hero-intro">
+              Je suis actuellement en dernière année à SeaTech – Université de Toulon. 
+              Ce site rassemble les principaux projets, rapports et travaux réalisés au cours de ma formation, 
+              ainsi que quelques projets développés en parallèle à titre personnel.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects-students">Voir mes projets</a>
+              <a class="btn btn-secondary" href="#contact">Me contacter</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="profile-card">
+              <img src="assets/images/profile.jpg" alt="Photo de profil de Thomas DE GUZMAN" class="profile-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <div class="section-heading reveal">
+
+            <h2>Domaines d’intérêt</h2>
+          </div>
+          <div class="badges reveal">
+            <span class="badge"><i class="fas fa-flask"></i> CFD</span>
+            <span class="badge"><i class="fas fa-fan"></i> OpenFOAM</span>
+            <span class="badge"><i class="fab fa-python"></i> Python</span>
+            <span class="badge"><i class="fas fa-code"></i> Fortran</span>
+            <span class="badge"><i class="fab fa-linux"></i> Linux</span>
+            <span class="badge"><i class="fas fa-wind"></i> Aérodynamique</span>
+            <span class="badge"><i class="fas fa-cube"></i> Simulation numérique</span>
+            <span class="badge"><i class="fas fa-chart-line"></i> Analyse de données</span>
+            <span class="badge"><i class="fas fa-cubes"></i> Abaqus</span>
+            <span class="badge"><i class="fas fa-brain"></i> IA</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-students" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Projets étudiants</h2>
+            <p class="section-intro">
+              Cette section rassemble les principaux projets réalisés au cours de ma formation
+              d’ingénieur. Ils portent sur la simulation numérique, la mécanique des fluides,
+              les méthodes numériques et le calcul scientifique.
+            </p>
+          </div>
+
+          <div class="year-group reveal">
+            <h3>2026</h3>
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-ls0417.jpg" alt="Simulation profil LS-0417" />
+                </div>
+                <h4>Simulation d'un écoulement 2D autour d'un profil LS-0417</h4>
+                <p class="project-meta">Thomas DE GUZMAN</p>
+                <p>Étude de l'écoulement autour d'un profil en CFD avec OpenFOAM.</p>
+                <div class="tags">
+                  <span><i class="fas fa-fan"></i> OpenFOAM</span>
+                  <span><i class="fas fa-flask"></i> CFD</span>
+                  <span><i class="fas fa-wind"></i> aérodynamique</span>
+                </div>
+                <details class="project-summary">
+                  <summary>Voir plus (résumé)</summary>
+                  <div class="project-summary-content">
+                    <div class="project-summary-item"><strong>Objectif :</strong> Caractériser le comportement aérodynamique du profil LS-0417 par simulation numérique.</div>
+                    <div class="project-summary-item"><strong>Méthodes :</strong> Génération du maillage, mise en place des cas OpenFOAM, simulations pour différents angles d'attaque et post-traitement des résultats.</div>
+                    <div class="project-summary-item"><strong>Résultats :</strong> Analyse des coefficients aérodynamiques, des champs d'écoulement et de l'influence des paramètres numériques.</div>
+                    <div class="project-summary-item"><strong>Compétences :</strong> CFD, OpenFOAM, maillage, Linux, post-traitement, analyse de résultats.</div>
+                  </div>
+                </details>
+                <a class="btn btn-small" href="assets/files/rapport-placeholder.pdf" target="_blank" rel="noreferrer">
+                  <!-- Remplacer ce lien par le PDF du rapport lorsque disponible -->
+                  Consulter le rapport
+                </a>
+              </article>
+
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-naca4412.jpg" alt="Simulation profil NACA 4412" />
+                </div>
+                <h4>Simulation d'un écoulement 2D autour d'un profil NACA 4412</h4>
+                <p class="project-meta">Thomas DE GUZMAN, Julie PELLETIER</p>
+                <p>Analyse CFD d'un profil NACA avec comparaison de résultats numériques.</p>
+                <div class="tags">
+                  <span><i class="fas fa-fan"></i> OpenFOAM</span>
+                  <span><i class="fas fa-flask"></i> CFD</span>
+                  <span><i class="fas fa-wind"></i> aérodynamique</span>
+                </div>
+                <details class="project-summary">
+                  <summary>Voir plus (résumé)</summary>
+                  <div class="project-summary-content">
+                    <div class="project-summary-item"><strong>Objectif :</strong> Étudier l'écoulement autour d'un profil NACA 4412 et analyser son comportement aérodynamique.</div>
+                    <div class="project-summary-item"><strong>Méthodes :</strong> Comparaison de plusieurs configurations de simulation, étude de maillages et analyse des coefficients de portance et de traînée.</div>
+                    <div class="project-summary-item"><strong>Résultats :</strong> Mise en évidence de l'influence du maillage, des conditions numériques et de l'angle d'attaque sur les résultats.</div>
+                    <div class="project-summary-item"><strong>Compétences :</strong> OpenFOAM, CFD, aérodynamique, post-traitement, analyse critique.</div>
+                  </div>
+                </details>
+                <a class="btn btn-small" href="assets/files/rapport-placeholder.pdf" target="_blank" rel="noreferrer">
+                  Consulter le rapport
+                </a>
+              </article>
+
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-shock-absorber.jpg" alt="Modélisation amortisseur" />
+                </div>
+                <h4>Modélisation et analyse du comportement d'un amortisseur de choc à lames</h4>
+                <p class="project-meta">Thomas DE GUZMAN, Claude DELCASSE</p>
+                <p>Analyse numérique et modélisation par éléments finis d'un système mécanique.</p>
+                <div class="tags">
+                  <span><i class="fas fa-cubes"></i> Abaqus</span>
+                  <span><i class="fas fa-cube"></i> éléments finis</span>
+                  <span><i class="fas fa-layer-group"></i> mécanique</span>
+                </div>
+                <details class="project-summary">
+                  <summary>Voir plus (résumé)</summary>
+                  <div class="project-summary-content">
+                    <div class="project-summary-item"><strong>Objectif :</strong> Modéliser le comportement mécanique d'un amortisseur de choc à lames à l'aide de la méthode des éléments finis.</div>
+                    <div class="project-summary-item"><strong>Méthodes :</strong> Création du modèle numérique, définition des matériaux, des conditions aux limites et analyse sous Abaqus.</div>
+                    <div class="project-summary-item"><strong>Résultats :</strong> Observation des contraintes, des déplacements et du comportement global de la structure sous chargement.</div>
+                    <div class="project-summary-item"><strong>Compétences :</strong> Abaqus, éléments finis, mécanique des structures, modélisation numérique.</div>
+                  </div>
+                </details>
+                <a class="btn btn-small" href="assets/files/rapport-placeholder.pdf" target="_blank" rel="noreferrer">
+                  Consulter le rapport
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <div class="year-group reveal">
+            <h3>2025</h3>
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-heat-eq-1d.jpg" alt="Équation de la chaleur 1D" />
+                </div>
+                <h4>Résolution numérique de l'équation de la chaleur en 1D</h4>
+                <p class="project-meta">Thomas DE GUZMAN</p>
+                <p>Résolution par différences finies d'un problème de diffusion thermique.</p>
+                <div class="tags">
+                  <span><i class="fas fa-code"></i> Fortran90</span>
+                  <span><i class="fas fa-calculator"></i> différences finies</span>
+                  <span><i class="fas fa-square-root-variable"></i> méthodes numériques</span>
+                </div>
+                <details class="project-summary">
+                  <summary>Voir plus (résumé)</summary>
+                  <div class="project-summary-content">
+                    <div class="project-summary-item"><strong>Objectif :</strong> Résoudre numériquement l'équation de la chaleur unidimensionnelle.</div>
+                    <div class="project-summary-item"><strong>Méthodes :</strong> Implémentation de plusieurs schémas temporels : Euler explicite, Euler implicite et Crank–Nicolson.</div>
+                    <div class="project-summary-item"><strong>Résultats :</strong> Comparaison de la stabilité, de la précision et du comportement numérique des différentes méthodes.</div>
+                    <div class="project-summary-item"><strong>Compétences :</strong> Fortran90, différences finies, méthodes numériques, calcul scientifique.</div>
+                  </div>
+                </details>
+                <a class="btn btn-small" href="assets/files/rapport-placeholder.pdf" target="_blank" rel="noreferrer">
+                  Consulter le rapport
+                </a>
+              </article>
+
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-heat-eq-2d.jpg" alt="Équation de la chaleur 2D" />
+                </div>
+                <h4>Résolution par différences finies de l'équation de la chaleur en 2D</h4>
+                <p class="project-meta">Thomas DE GUZMAN</p>
+                <p>Extension du modèle thermique à une géométrie bidimensionnelle.</p>
+                <div class="tags">
+                  <span><i class="fas fa-code"></i> Fortran90</span>
+                  <span><i class="fas fa-calculator"></i> différences finies</span>
+                  <span><i class="fas fa-function"></i> calcul scientifique</span>
+                </div>
+                <details class="project-summary">
+                  <summary>Voir plus (résumé)</summary>
+                  <div class="project-summary-content">
+                    <div class="project-summary-item"><strong>Objectif :</strong> Étendre la résolution numérique de l'équation de la chaleur à un domaine bidimensionnel.</div>
+                    <div class="project-summary-item"><strong>Méthodes :</strong> Discrétisation spatiale par différences finies, implémentation numérique et analyse de l'évolution thermique.</div>
+                    <div class="project-summary-item"><strong>Résultats :</strong> Visualisation de la diffusion de la chaleur et étude de l'influence des paramètres numériques.</div>
+                    <div class="project-summary-item"><strong>Compétences :</strong> Fortran90, différences finies, calcul scientifique, visualisation de résultats.</div>
+                  </div>
+                </details>
+                <a class="btn btn-small" href="assets/files/rapport-placeholder.pdf" target="_blank" rel="noreferrer">
+                  Consulter le rapport
+                </a>
+              </article>
+
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-seagale.jpg" alt="Stage Seagale" />
+                </div>
+                <h4>Stage ouvrier — Seagale</h4>
+                <p class="project-meta">Thomas DE GUZMAN</p>
+                <p>Découverte du milieu industriel et des pratiques de production.</p>
+                <div class="tags">
+                  <span><i class="fas fa-briefcase"></i> stage</span>
+                  <span><i class="fas fa-industry"></i> industrie</span>
+                  <span><i class="fas fa-handshake"></i> professionnel</span>
+                </div>                <details class="project-summary">
+                  <summary>Voir plus (résumé)</summary>
+                  <div class="project-summary-content">
+                    <div class="project-summary-item"><strong>Objectif :</strong> Découvrir le fonctionnement d'une entreprise industrielle et le rôle des différents métiers de production.</div>
+                    <div class="project-summary-item"><strong>Méthodes :</strong> Observation du terrain, participation aux activités, échanges avec les équipes et rédaction d'un rapport de stage.</div>
+                    <div class="project-summary-item"><strong>Résultats :</strong> Meilleure compréhension de l'organisation industrielle, des contraintes de production et du travail en équipe.</div>
+                    <div class="project-summary-item"><strong>Compétences :</strong> Découverte industrielle, communication, observation, esprit d'équipe.</div>
+                  </div>
+                </details>                <a class="btn btn-small" href="assets/files/rapport-placeholder.pdf" target="_blank" rel="noreferrer">
+                  Consulter le rapport
+                </a>
+              </article>
+
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-manta.jpg" alt="Drone sous-marin MANTA" />
+                </div>
+                <h4>Étude structurelle et hydrodynamique du drone sous-marin MANTA</h4>
+                <p class="project-meta">Thomas DE GUZMAN, Kenzo, Teysseydre, Julie Croizé, Léo Hamadou-Duclosher, Amélie Duchemin, Corentin Gairorad, Laëlien Mony, Brian Gaucher, Justine LeDunois, Alexandre Ribeiro-Martins</p>
+                <p>Modélisation et analyse d'un drone sous-marin dans un contexte de projet étudiant.</p>
+                <div class="tags">
+                  <span><i class="fas fa-droplet"></i> hydrodynamique</span>
+                  <span><i class="fas fa-layer-group"></i> structure</span>
+                  <span><i class="fas fa-users"></i> équipe</span>
+                </div>
+                <details class="project-summary">
+                  <summary>Voir plus (résumé)</summary>
+                  <div class="project-summary-content">
+                    <div class="project-summary-item"><strong>Objectif :</strong> Participer à l'étude d'un drone sous-marin en abordant ses aspects structurels et hydrodynamiques.</div>
+                    <div class="project-summary-item"><strong>Méthodes :</strong> Travail en équipe, analyse du comportement du drone, étude de la structure et réflexion sur les contraintes liées au milieu marin.</div>
+                    <div class="project-summary-item"><strong>Résultats :</strong> Développement d'une approche multidisciplinaire mêlant mécanique, hydrodynamique et organisation de projet.</div>
+                    <div class="project-summary-item"><strong>Compétences :</strong> Travail en équipe, hydrodynamique, mécanique, gestion de projet, analyse technique.</div>
+                  </div>
+                </details>
+                <a class="btn btn-small" href="assets/files/rapport-placeholder.pdf" target="_blank" rel="noreferrer">
+                  Consulter le rapport
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <div class="year-group reveal">
+            <h3>2024</h3>
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-naca-2024.jpg" alt="Simulation NACA 2024" />
+                </div>
+                <h4>Simulation d'un écoulement 2D autour d'un profil NACA avec OpenFOAM</h4>
+                <p class="project-meta">Thomas DE GUZMAN, Julie PELLETIER</p>
+                <p>Première approche de la CFD avec OpenFOAM sur un profil aérodynamique.</p>
+                <div class="tags">
+                  <span><i class="fas fa-fan"></i> OpenFOAM</span>
+                  <span><i class="fas fa-flask"></i> CFD</span>
+                  <span><i class="fas fa-wind"></i> aérodynamique</span>
+                </div>
+                <details class="project-summary">
+                  <summary>Voir plus (résumé)</summary>
+                  <div class="project-summary-content">
+                    <div class="project-summary-item"><strong>Objectif :</strong> Réaliser une première étude CFD autour d'un profil aérodynamique avec OpenFOAM.</div>
+                    <div class="project-summary-item"><strong>Méthodes :</strong> Préparation du cas, définition des conditions aux limites, lancement des simulations et visualisation des résultats.</div>
+                    <div class="project-summary-item"><strong>Résultats :</strong> Découverte de la chaîne complète d'une simulation CFD, du maillage jusqu'au post-traitement.</div>
+                    <div class="project-summary-item"><strong>Compétences :</strong> OpenFOAM, CFD, aérodynamique, bases du calcul numérique.</div>
+                  </div>
+                </details>
+                <a class="btn btn-small" href="assets/files/rapport-placeholder.pdf" target="_blank" rel="noreferrer">
+                  Consulter le rapport
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-personal" class="section section-light">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Projets personnels</h2>
+            <p class="section-intro">
+              Cette section regroupe mes projets personnels autour du développement web,
+              de l’intelligence artificielle, de l’automatisation et de la visualisation de données.
+            </p>
+          </div>
+
+          <div class="project-grid reveal">
+            <article class="project-card">
+              <h4>Création du site internet AerOptAI</h4>
+              <p>
+                Interface de visualisation et de présentation de résultats de simulations numériques.
+              </p>
+              <div class="tags">
+                <span>Web</span>
+                <span>IA</span>
+                <span>CFD</span>
+                <span>visualisation</span>
+              </div>
+              <a class="btn btn-small" href="https://example.com/" target="_blank" rel="noreferrer">
+                Consulter le site AerOptAI
+              </a>
+            </article>
+
+            <article class="project-card">
+              <h4>Portfolio personnel</h4>
+              <p>Création de ce site portfolio pour présenter mon parcours, mes projets et mes compétences.</p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>VS Code</span>
+              </div>
+              <a class="btn btn-small" href="#home">Voir le portfolio</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div class="section-heading reveal">
+            <h2>Parcours</h2>
+            <h3 class="section-subtitle">À propos</h3>
+            <p class="section-intro">
+              Je suis étudiant ingénieur à SeaTech – Université de Toulon. Mon parcours est orienté vers la mécanique des fluides, la simulation numérique et le calcul scientifique. J’aime développer des outils permettant de mieux comprendre, visualiser et analyser des phénomènes physiques.
+            </p>
+          </div>
+          <div class="skills-card reveal">
+            <h3>Compétences clés</h3>
+            <ul>
+              <li>Simulation numérique</li>
+              <li>Mécanique des fluides</li>
+              <li>Programmation scientifique</li>
+              <li>Analyse de données</li>
+              <li>Rédaction technique</li>
+              <li>Travail en équipe</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-light">
+        <div class="container contact-card reveal">
+          <h2>Contact</h2>
+          <div class="contact-list">
+            <p><strong>Email :</strong> thomas.deguzman33@gmail.com</p>
+            <p><strong>Téléphone :</strong> <a href="tel:+33783617185">+33 7 83 61 71 85</a></p>
+            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Profil LinkedIn</a></p>
+            <p><strong>GitHub :</strong> <a href="https://github.com/" target="_blank" rel="noreferrer">Profil GitHub</a></p>
+            <p><strong>Localisation :</strong> Toulon / Prague</p>
+          </div>
+          <a class="btn btn-primary" href="mailto:thomas.deguzman33@gmail.com">Envoyer un email</a>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

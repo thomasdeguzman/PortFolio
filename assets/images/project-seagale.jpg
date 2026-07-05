@@ -1,0 +1,48 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#123c7c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2a5a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad6)"/>
+  
+  <!-- Factory illustration -->
+  <g fill="#4ecdc4" opacity="0.3">
+    <rect x="200" y="200" width="80" height="120"/>
+    <rect x="320" y="180" width="80" height="140"/>
+    <rect x="440" y="210" width="80" height="110"/>
+  </g>
+  
+  <!-- Chimneys -->
+  <g stroke="#ffd93d" stroke-width="4" fill="none">
+    <line x1="230" y1="200" x2="230" y2="100"/>
+    <line x1="350" y1="180" x2="350" y2="80"/>
+    <line x1="470" y1="210" x2="470" y2="110"/>
+  </g>
+  
+  <!-- Smoke -->
+  <circle cx="230" cy="80" r="15" fill="#ffd93d" opacity="0.4"/>
+  <circle cx="350" cy="60" r="15" fill="#ffd93d" opacity="0.4"/>
+  <circle cx="470" cy="90" r="15" fill="#ffd93d" opacity="0.4"/>
+  
+  <!-- Workers -->
+  <g fill="#ff6b6b" opacity="0.5">
+    <circle cx="300" cy="330" r="8"/>
+    <rect x="295" y="340" width="10" height="20"/>
+    
+    <circle cx="400" cy="330" r="8"/>
+    <rect x="395" y="340" width="10" height="20"/>
+    
+    <circle cx="500" cy="330" r="8"/>
+    <rect x="495" y="340" width="10" height="20"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="380" font-family="Arial" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">
+    Industrial Internship
+  </text>
+  <text x="400" y="410" font-family="Arial" font-size="16" fill="#ffffff" opacity="0.8" text-anchor="middle">
+    Seagale | Professional Discovery
+  </text>
+</svg>

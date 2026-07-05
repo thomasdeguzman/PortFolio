@@ -1,0 +1,37 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#123c7c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2a5a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad8)"/>
+  
+  <!-- Pressure coefficient visualization -->
+  <g opacity="0.6">
+    <rect x="100" y="100" width="50" height="250" fill="#4ecdc4"/>
+    <rect x="150" y="80" width="50" height="290" fill="#6dd5cb"/>
+    <rect x="200" y="60" width="50" height="330" fill="#95e1d3"/>
+    <rect x="250" y="100" width="50" height="250" fill="#ffd93d"/>
+    <rect x="300" y="120" width="50" height="210" fill="#ffb347"/>
+    <rect x="350" y="140" width="50" height="170" fill="#ff8a65"/>
+    <rect x="400" y="150" width="50" height="150" fill="#ff6b6b"/>
+    <rect x="450" y="140" width="50" height="170" fill="#ff8a65"/>
+    <rect x="500" y="100" width="50" height="250" fill="#ffd93d"/>
+    <rect x="550" y="60" width="50" height="330" fill="#95e1d3"/>
+    <rect x="600" y="80" width="50" height="290" fill="#6dd5cb"/>
+    <rect x="650" y="100" width="50" height="250" fill="#4ecdc4"/>
+  </g>
+  
+  <!-- Airfoil outline -->
+  <path d="M 100 200 Q 200 120 400 120 Q 600 120 700 200 Q 650 280 400 280 Q 200 280 100 200" 
+        fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Text -->
+  <text x="400" y="380" font-family="Arial" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">
+    NACA Aerodynamic Study
+  </text>
+  <text x="400" y="410" font-family="Arial" font-size="16" fill="#ffffff" opacity="0.8" text-anchor="middle">
+    OpenFOAM | Pressure Coefficient
+  </text>
+</svg>

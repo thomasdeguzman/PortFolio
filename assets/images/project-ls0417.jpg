@@ -1,0 +1,44 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#123c7c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2a5a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad1)"/>
+  
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.1">
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+  </g>
+  
+  <!-- Airfoil profile LS-0417 -->
+  <path d="M 150 225 Q 250 150 350 145 Q 400 145 450 160 Q 480 170 500 200 Q 510 220 500 240 Q 480 270 450 280 Q 400 295 350 295 Q 250 300 150 225" 
+        fill="none" stroke="#00ff88" stroke-width="4"/>
+  
+  <!-- Flow arrows -->
+  <g stroke="#ffffff" stroke-width="2" opacity="0.7">
+    <path d="M 50 100 L 120 100" marker-end="url(#arrowhead)"/>
+    <path d="M 50 200 L 120 200" marker-end="url(#arrowhead)"/>
+    <path d="M 50 300 L 120 300" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- Pressure field visualization -->
+  <circle cx="380" cy="180" r="40" fill="#ff6b6b" opacity="0.3"/>
+  <circle cx="380" cy="270" r="40" fill="#4ecdc4" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text x="400" y="380" font-family="Arial" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">
+    CFD Simulation - LS-0417
+  </text>
+  <text x="400" y="410" font-family="Arial" font-size="16" fill="#ffffff" opacity="0.8" text-anchor="middle">
+    OpenFOAM | Aérodynamique
+  </text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ffffff"/>
+    </marker>
+  </defs>
+</svg>
