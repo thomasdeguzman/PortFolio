@@ -336,6 +336,13 @@ img {
   font-size: 0.84rem;
 }
 
+.project-date {
+  margin: -0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
 .tags i {
   font-size: 0.75rem;
   opacity: 0.8;

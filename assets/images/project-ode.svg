@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title">
+  <title id="title">Résolution numérique d'équations différentielles</title>
+  <rect width="800" height="450" fill="#eef4fb"/>
+  <path d="M85 365H730M110 390V65" stroke="#123c7c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M115 110C210 145 275 215 350 270S535 350 700 360" fill="none" stroke="#123c7c" stroke-width="10"/>
+  <path d="M115 110L205 160 295 220 385 278 475 320 565 344 655 356 700 360" fill="none" stroke="#f08c46" stroke-width="7" stroke-dasharray="10 10"/>
+  <g fill="#f08c46"><circle cx="115" cy="110" r="8"/><circle cx="205" cy="160" r="8"/><circle cx="295" cy="220" r="8"/><circle cx="385" cy="278" r="8"/><circle cx="475" cy="320" r="8"/><circle cx="565" cy="344" r="8"/><circle cx="655" cy="356" r="8"/></g>
+  <text x="108" y="48" fill="#123c7c" font-family="Arial,sans-serif" font-size="28" font-weight="700">ÉQUATIONS DIFFÉRENTIELLES</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title">
+  <title id="title">Comparaison de méthodes d'intégration numérique</title>
+  <rect width="800" height="450" fill="#eef4fb"/>
+  <path d="M80 370H735M105 395V65" stroke="#123c7c" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#7db5e8" fill-opacity=".55" stroke="#397ebc" stroke-width="3"><path d="M125 370V285H205V370Z"/><path d="M205 370V185H285V370Z"/><path d="M285 370V120H365V370Z"/><path d="M365 370V105H445V370Z"/><path d="M445 370V145H525V370Z"/><path d="M525 370V235H605V370Z"/><path d="M605 370V320H685V370Z"/></g>
+  <path d="M110 335C205 285 230 165 335 115S515 130 700 335" fill="none" stroke="#f08c46" stroke-width="10"/>
+  <text x="105" y="48" fill="#123c7c" font-family="Arial,sans-serif" font-size="28" font-weight="700">INTÉGRATION NUMÉRIQUE</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title">
+  <title id="title">Propagation numérique d'une équation de transport</title>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#eaf3fc"/><stop offset="1" stop-color="#dbe9f7"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g fill="none" stroke-linecap="round"><path d="M70 330C145 330 150 115 235 115S325 330 405 330 485 155 565 155 635 330 730 330" stroke="#123c7c" stroke-width="11"/><path d="M70 355C170 355 185 210 270 210S355 355 440 355 520 245 600 245 660 355 730 355" stroke="#4b91cf" stroke-width="7" opacity=".75"/></g>
+  <path d="M545 90H690M660 65L695 90 660 115" fill="none" stroke="#f08c46" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="50" fill="#123c7c" font-family="Arial,sans-serif" font-size="28" font-weight="700">ÉQUATION DE TRANSPORT</text>
+</svg>
