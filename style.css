@@ -635,6 +635,8 @@ img {
 
 .journey-event.is-report {
   z-index: 4;
+  min-width: 10px;
+  min-height: 10px;
 }
 
 .journey-event-date {
