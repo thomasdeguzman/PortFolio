@@ -764,9 +764,11 @@ img {
 
 .journey-detail-image {
   width: 100%;
-  height: 135px;
+  height: auto;
+  aspect-ratio: 16 / 9;
   border-radius: 0.75rem;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--light);
 }
 
 .journey-detail-date {
@@ -985,7 +987,7 @@ img {
   .journey-event-label { max-width: 120px; font-size: 0.7rem; }
   .journey-detail,
   .journey-detail.has-image { grid-template-columns: 1fr; }
-  .journey-detail-image { height: 170px; }
+  .journey-detail-image { height: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
