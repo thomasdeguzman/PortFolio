@@ -28,6 +28,7 @@
           <a href="#projects-students">Projets étudiants</a>
           <a href="#projects-personal">Projets personnels</a>
           <a href="#about">À propos</a>
+          <a href="#parcours">Parcours</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -63,27 +64,6 @@
         </div>
       </section>
 
-      <section class="section section-light">
-        <div class="container">
-          <div class="section-heading reveal">
-
-            <h2>Domaines d’intérêt</h2>
-          </div>
-          <div class="badges reveal">
-            <span class="badge"><i class="fas fa-flask"></i> CFD</span>
-            <span class="badge"><i class="fas fa-fan"></i> OpenFOAM</span>
-            <span class="badge"><i class="fab fa-python"></i> Python</span>
-            <span class="badge"><i class="fas fa-code"></i> Fortran</span>
-            <span class="badge"><i class="fab fa-linux"></i> Linux</span>
-            <span class="badge"><i class="fas fa-wind"></i> Aérodynamique</span>
-            <span class="badge"><i class="fas fa-cube"></i> Simulation numérique</span>
-            <span class="badge"><i class="fas fa-chart-line"></i> Analyse de données</span>
-            <span class="badge"><i class="fas fa-cubes"></i> Abaqus</span>
-            <span class="badge"><i class="fas fa-brain"></i> IA</span>
-          </div>
-        </div>
-      </section>
-
       <section id="projects-students" class="section">
         <div class="container">
           <div class="section-heading reveal">
@@ -98,7 +78,7 @@
           <div class="year-group reveal">
             <h3>2026</h3>
             <div class="project-grid">
-              <article class="project-card">
+              <article class="project-card" id="project-ls0417">
                 <div class="project-image">
                   <img src="assets/images/project-ls0417.jpg" alt="Simulation profil LS-0417" />
                 </div>
@@ -126,7 +106,7 @@
                 </a>
               </article>
 
-              <article class="project-card">
+              <article class="project-card" id="project-naca4412">
                 <div class="project-image">
                   <img src="assets/images/project-naca4412.png" alt="Simulation profil NACA 4412" />
                 </div>
@@ -478,8 +458,7 @@
       <section id="about" class="section">
         <div class="container about-grid">
           <div class="section-heading reveal">
-            <h2>Parcours</h2>
-            <h3 class="section-subtitle">À propos</h3>
+            <h2>À propos</h2>
             <p class="section-intro">
               Je suis étudiant ingénieur à SeaTech – Université de Toulon. Mon parcours est orienté vers la mécanique des fluides, la simulation numérique et le calcul scientifique. J’aime développer des outils permettant de mieux comprendre, visualiser et analyser des phénomènes physiques.
             </p>
@@ -494,6 +473,39 @@
               <li>Rédaction technique</li>
               <li>Travail en équipe</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="parcours" class="section journey-section">
+        <div class="container">
+          <div class="section-heading journey-heading reveal">
+            <span class="eyebrow">Mon parcours</span>
+            <h2>Résumé de mon parcours</h2>
+            <p class="section-intro">Les principales étapes de ma formation et de mes expériences.</p>
+          </div>
+
+          <div class="journey-legend reveal" aria-label="Légende de la frise">
+            <span><i class="journey-legend-dot journey-legend-prepa"></i>Classe préparatoire</span>
+            <span><i class="journey-legend-dot journey-legend-seatech"></i>SeaTech</span>
+            <span><i class="journey-legend-dot journey-legend-work"></i>Expériences professionnelles</span>
+            <span><i class="journey-legend-dot journey-legend-mobility"></i>Projets ou mobilité internationale</span>
+          </div>
+
+          <div class="journey-shell reveal">
+            <p class="journey-scroll-hint"><i class="fas fa-arrows-left-right" aria-hidden="true"></i> Faites défiler la frise horizontalement</p>
+            <div class="journey-scroll" tabindex="0" aria-label="Frise chronologique de 2020 à 2028">
+              <div class="journey-timeline" id="journey-timeline">
+                <div class="journey-years" id="journey-years" aria-hidden="true"></div>
+                <div class="journey-axis" aria-hidden="true"><span class="journey-axis-progress"></span></div>
+                <div class="journey-items" id="journey-items"></div>
+              </div>
+            </div>
+
+            <div class="journey-detail-wrap" id="journey-detail-wrap">
+              <p class="journey-empty" id="journey-empty">Survolez ou sélectionnez un événement pour en savoir plus.</p>
+              <article class="journey-detail" id="journey-detail" aria-live="polite" aria-hidden="true"></article>
+            </div>
           </div>
         </div>
       </section>
