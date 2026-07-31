@@ -142,7 +142,7 @@ if (timelineElement) {
     const end = item.end ? datePosition(item.end) : start;
     const isPeriod = item.type === 'period';
     button.type = 'button';
-    button.className = `journey-event category-${item.category}${item.milestone ? ' is-milestone' : ''}${item.future ? ' is-future' : ''}${item.compact ? ' is-compact' : ''}`;
+    button.className = `journey-event category-${item.category}${isPeriod ? ' is-period' : ''}${item.milestone ? ' is-milestone' : ''}${item.future ? ' is-future' : ''}${item.compact ? ' is-compact' : ''}`;
     button.dataset.timelineId = item.id;
     button.setAttribute('aria-label', `${item.title}, ${item.dateLabel}. Afficher les détails`);
     button.style.left = isPeriod ? `${start}%` : `calc(${start}% - 22px)`;

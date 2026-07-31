@@ -554,6 +554,20 @@ img {
 .journey-event.category-mobility { --journey-color: var(--journey-mobility); }
 .journey-event.category-formation { --journey-color: #c98282; }
 
+.journey-event.is-period {
+  min-width: 0;
+}
+
+.journey-event.is-period::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: max(100%, 44px);
+  height: 44px;
+  transform: translateX(-50%);
+}
+
 .journey-marker {
   position: absolute;
   top: 16px;
