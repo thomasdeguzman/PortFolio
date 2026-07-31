@@ -47,7 +47,7 @@ Chaque projet a une image associée :
 
 | Projet | Fichier |
 |--------|---------|
-| Profil LS-0417 | `project-ls0417.jpg` |
+| Profil LS-0417 | `project-ls0417.png` |
 | NACA 4412 | `project-naca4412.jpg` |
 | Amortisseur | `project-shock-absorber.jpg` |
 | Chaleur 1D | `project-heat-eq-1d.jpg` |

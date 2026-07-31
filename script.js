@@ -73,7 +73,7 @@ if (timelineElement) {
       label: 'Entrée à SeaTech', dateLabel: 'Septembre 2024', title: 'Entrée à SeaTech',
       description: 'Intégration du cycle ingénieur à SeaTech – Université de Toulon, avec une formation orientée vers la mécanique, la modélisation et la simulation numérique.',
       badges: ['Mécanique des fluides', 'Calcul scientifique', 'Programmation', 'Simulation numérique', 'Méthodes numériques'],
-      labelPosition: 'below'
+      labelPosition: 'below', labelShift: -62, labelTop: 42
     },
     {
       id: 'seatech', type: 'period', category: 'seatech', start: seatechStart,
@@ -88,21 +88,21 @@ if (timelineElement) {
       label: 'Stage SEAGALE', dateLabel: 'Juin – août 2025', title: 'Stage chez SEAGALE',
       description: 'Première expérience en milieu industriel, avec une découverte du fonctionnement de l’entreprise, des méthodes de production et du travail en équipe.',
       badges: ['Environnement industriel', 'Production', 'Organisation', 'Travail en équipe'],
-      image: 'assets/images/project-seagale.jpg', labelPosition: 'below'
+      image: 'assets/images/project-seagale.jpg', labelPosition: 'below', labelShift: -12, labelTop: 72
     },
     {
       id: 'naca-project', type: 'event', category: 'seatech', start: '2026-01-15',
       label: 'Projet NACA 4412', dateLabel: '2026', title: 'Simulation CFD d’un profil NACA 4412',
       description: 'Étude numérique de l’écoulement autour d’un profil NACA 4412 pour différents angles d’attaque, avec analyse des coefficients de portance, de traînée et de la convergence des simulations.',
       badges: ['OpenFOAM', 'CFD', 'Python', 'Linux', 'Maillage', 'Post-traitement'],
-      image: 'assets/images/project-naca4412.png', link: '#project-naca4412', labelPosition: 'above'
+      image: 'assets/images/project-naca4412.png', link: '#project-naca4412', labelPosition: 'above', labelShift: 10
     },
     {
       id: 'ls-project', type: 'event', category: 'seatech', start: '2026-03-15',
       label: 'Projet LS-0417', dateLabel: '2026', title: 'Simulation du profil LS-0417',
       description: 'Étude numérique d’un écoulement bidimensionnel autour du profil aérodynamique LS-0417 et analyse de ses performances.',
       badges: ['OpenFOAM', 'CFD', 'Python', 'Aérodynamique', 'Post-traitement'],
-      image: 'assets/images/project-ls0417.jpg', link: '#project-ls0417', labelPosition: 'below'
+      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', labelPosition: 'below', labelShift: 72, labelTop: 42
     },
     {
       id: 'prague', type: 'period', category: 'mobility', start: '2026-02-01', end: '2026-08-31',
@@ -110,7 +110,7 @@ if (timelineElement) {
       description: 'Stage académique au Czech Technical University in Prague consacré à la simulation numérique et à la caractérisation aérodynamique de profils d’ailes.',
       points: ['Simulations CFD sous OpenFOAM', 'Étude du profil LS-0417', 'Analyse des coefficients aérodynamiques', 'Outils Python de post-traitement', 'Comparaison de configurations de profils évolutifs'],
       badges: ['OpenFOAM', 'CFD', 'Python', 'Linux', 'Aérodynamique', 'Analyse de données'],
-      image: 'assets/images/project-ls0417.jpg', link: '#project-ls0417', lane: 245, labelPosition: 'below'
+      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 245, labelPosition: 'below'
     },
     {
       id: 'diploma', type: 'event', category: 'formation', start: graduationDate,
@@ -158,7 +158,7 @@ if (timelineElement) {
     button.style.height = '44px';
     button.innerHTML = `
       <span class="${isPeriod ? 'journey-period-bar' : 'journey-marker'}" aria-hidden="true"></span>
-      <span class="journey-event-label" style="top:${item.labelPosition === 'above' ? '-28px' : '38px'}">${item.label}<small class="journey-event-date">${item.dateLabel}</small></span>
+      <span class="journey-event-label" style="top:${item.labelTop ?? (item.labelPosition === 'above' ? -28 : 38)}px;left:calc(50% + ${item.labelShift ?? 0}px)">${item.label}<small class="journey-event-date">${item.dateLabel}</small></span>
       <span class="journey-tooltip" role="tooltip">${item.title}<br>${item.dateLabel}</span>`;
 
     if (item.futureEnd) {
