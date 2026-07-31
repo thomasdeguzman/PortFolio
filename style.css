@@ -473,7 +473,7 @@ img {
 
 .journey-year {
   position: absolute;
-  top: 183px;
+  top: 300px;
   transform: translateX(-50%);
   color: var(--primary-dark);
   font-size: 0.88rem;
@@ -484,17 +484,17 @@ img {
 .journey-year::before {
   content: "";
   position: absolute;
-  bottom: 28px;
+  top: -265px;
   left: 50%;
   width: 1px;
-  height: 255px;
+  height: 120px;
   background: linear-gradient(to top, rgba(18, 60, 124, 0.14), transparent);
 }
 
 .journey-year::after {
   content: "";
   position: absolute;
-  bottom: 21px;
+  top: -145px;
   left: 50%;
   width: 1px;
   height: 14px;

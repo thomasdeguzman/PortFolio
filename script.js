@@ -77,11 +77,11 @@ if (timelineElement) {
       lane: 139, labelPosition: 'above', labelTop: -58
     },
     {
-      id: 'seagale', type: 'event', category: 'work', start: '2025-07-15',
-      label: 'Stage SEAGALE', dateLabel: 'Juin – août 2025', title: 'Stage chez SEAGALE',
+      id: 'seagale', type: 'period', category: 'work', start: '2025-06-15', end: '2025-08-05',
+      label: 'Stage SEAGALE', dateLabel: 'Mi-juin – début août 2025', title: 'Stage chez SEAGALE',
       description: 'Première expérience en milieu industriel, avec une découverte du fonctionnement de l’entreprise, des méthodes de production et du travail en équipe.',
       badges: ['Environnement industriel', 'Production', 'Organisation', 'Travail en équipe'],
-      image: 'assets/images/project-seagale.jpg', labelPosition: 'below', labelShift: 0, labelTop: 48
+      image: 'assets/images/project-seagale.jpg', lane: 165, labelPosition: 'below'
     },
     {
       id: 'naca-project', type: 'event', category: 'seatech', start: '2026-01-15',
@@ -103,7 +103,7 @@ if (timelineElement) {
       description: 'Stage académique au Czech Technical University in Prague consacré à la simulation numérique et à la caractérisation aérodynamique de profils d’ailes.',
       points: ['Simulations CFD sous OpenFOAM', 'Étude du profil LS-0417', 'Analyse des coefficients aérodynamiques', 'Outils Python de post-traitement', 'Comparaison de configurations de profils évolutifs'],
       badges: ['OpenFOAM', 'CFD', 'Python', 'Linux', 'Aérodynamique', 'Analyse de données'],
-      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 245, labelPosition: 'below'
+      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 210, labelPosition: 'below'
     },
     {
       id: 'diploma', type: 'event', category: 'formation', start: graduationDate,
