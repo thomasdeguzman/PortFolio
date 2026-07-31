@@ -625,6 +625,18 @@ img {
   box-shadow: 0 0 0 1px var(--journey-color);
 }
 
+.journey-event.is-report .journey-marker {
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-width: 2px;
+  box-shadow: 0 0 0 1px var(--journey-color);
+}
+
+.journey-event.is-report {
+  z-index: 4;
+}
+
 .journey-event-date {
   display: block;
   margin-top: 0.2rem;

@@ -88,77 +88,77 @@ if (timelineElement) {
       label: 'TIPE Halo F1', dateLabel: '2 juillet 2024', title: 'TIPE — Le Halo en Formule 1',
       description: 'Étude des choix de conception du halo et de son rôle dans la protection du pilote.',
       badges: ['TIPE', 'Modélisation', 'Expérimentation'], image: 'assets/images/project-TIPE.png',
-      link: '#project-tipe', compact: true, report: true, directLink: true, lane: 129
+      link: '#project-tipe', compact: true, report: true, directLink: true, lane: 147
     },
     {
       id: 'report-interpolation', type: 'event', category: 'seatech', start: '2025-04-10',
       label: 'Interpolation', dateLabel: '10 avril 2025', title: 'Étude numérique de l’interpolation',
       description: 'Interpolation polynomiale, points de Tchebychev et fonctions splines.',
       badges: ['MATLAB', 'Interpolation', 'Splines'], image: 'assets/images/project-interpolation.svg',
-      link: '#project-interpolation', compact: true, report: true, directLink: true, lane: 129
+      link: '#project-interpolation', compact: true, report: true, directLink: true, lane: 125
     },
     {
       id: 'report-ode', type: 'event', category: 'seatech', start: '2025-04-23',
       label: 'Équations différentielles', dateLabel: '23 avril 2025', title: 'Résolution numérique d’équations différentielles',
       description: 'Étude des schémas d’Euler explicite et implicite pour un problème de Cauchy.',
       badges: ['MATLAB', 'Euler', 'Convergence'], image: 'assets/images/project-ode.svg',
-      link: '#project-ode', compact: true, report: true, directLink: true, lane: 137
+      link: '#project-ode', compact: true, report: true, directLink: true, lane: 147
     },
     {
       id: 'report-integration', type: 'event', category: 'seatech', start: '2025-05-27',
       label: 'Intégration numérique', dateLabel: '27 mai 2025', title: 'Étude des méthodes d’intégration numérique',
       description: 'Comparaison de plusieurs méthodes de quadrature numérique.',
       badges: ['MATLAB', 'Quadrature', 'Analyse d’erreur'], image: 'assets/images/project-integration.svg',
-      link: '#project-integration', compact: true, report: true, directLink: true, lane: 129
+      link: '#project-integration', compact: true, report: true, directLink: true, lane: 169
     },
     {
       id: 'report-transport', type: 'event', category: 'seatech', start: '2025-06-10',
       label: 'Équation de transport', dateLabel: '10 juin 2025', title: 'Résolution numérique d’équations aux dérivées partielles',
       description: 'Étude de schémas aux différences finies appliqués à l’équation de transport.',
       badges: ['EDP', 'Différences finies', 'Stabilité'], image: 'assets/images/project-transport.svg',
-      link: '#project-transport', compact: true, report: true, directLink: true, lane: 137
+      link: '#project-transport', compact: true, report: true, directLink: true, lane: 125
     },
     {
       id: 'report-manta', type: 'event', category: 'seatech', start: '2025-06-13',
       label: 'Projet MANTA', dateLabel: '13 juin 2025', title: 'Étude du drone sous-marin MANTA',
       description: 'Étude structurelle et hydrodynamique d’un drone sous-marin.',
       badges: ['Hydrodynamique', 'Structure', 'Travail en équipe'], image: 'assets/images/project-manta.png',
-      link: '#project-manta', compact: true, report: true, directLink: true, lane: 129
+      link: '#project-manta', compact: true, report: true, directLink: true, lane: 169
     },
     {
       id: 'report-heat-2d', type: 'event', category: 'seatech', start: '2025-10-13',
       label: 'Chaleur 2D', dateLabel: '13 octobre 2025', title: 'Équation de la chaleur en 2D',
       description: 'Résolution par différences finies de l’équation de la chaleur en deux dimensions.',
       badges: ['Fortran90', 'Différences finies'], image: 'assets/images/project-heat-eq-2d.png',
-      link: '#project-heat-2d', compact: true, report: true, directLink: true, lane: 137
+      link: '#project-heat-2d', compact: true, report: true, directLink: true, lane: 147
     },
     {
       id: 'report-heat-1d', type: 'event', category: 'seatech', start: '2025-11-10',
       label: 'Chaleur 1D', dateLabel: '10 novembre 2025', title: 'Équation de la chaleur en 1D',
       description: 'Comparaison de schémas numériques pour un problème de diffusion thermique.',
       badges: ['Fortran90', 'Différences finies'], image: 'assets/images/project-heat-eq-1d.png',
-      link: '#project-heat-1d', compact: true, report: true, directLink: true, lane: 129
+      link: '#project-heat-1d', compact: true, report: true, directLink: true, lane: 125
     },
     {
       id: 'report-elliptic', type: 'event', category: 'seatech', start: '2025-12-20',
       label: 'Problème elliptique', dateLabel: '20 décembre 2025', title: 'Problème elliptique 2D par éléments finis',
       description: 'Résolution de l’équation de Laplace par la méthode des éléments finis.',
       badges: ['Éléments finis', 'Fortran', 'VisIt'], image: 'assets/images/project-elliptic-fem.png',
-      link: '#project-elliptic-fem', compact: true, report: true, directLink: true, lane: 137
+      link: '#project-elliptic-fem', compact: true, report: true, directLink: true, lane: 169
     },
     {
       id: 'report-naca', type: 'event', category: 'seatech', start: '2026-01-15',
       label: 'NACA 4412', dateLabel: 'Janvier 2026', title: 'Simulation CFD d’un profil NACA 4412',
       description: 'Étude numérique de l’écoulement autour d’un profil NACA 4412.',
       badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-naca4412.png',
-      link: '#project-naca4412', compact: true, report: true, directLink: true, lane: 129
+      link: '#project-naca4412', compact: true, report: true, directLink: true, lane: 147
     },
     {
       id: 'report-shock', type: 'event', category: 'seatech', start: '2026-03-27',
       label: 'Amortisseur', dateLabel: '27 mars 2026', title: 'Amortisseur de choc à lames',
       description: 'Modélisation et analyse par éléments finis sous Abaqus.',
       badges: ['Abaqus', 'Éléments finis', 'Mécanique'], image: 'assets/images/project-shock-absorber.png',
-      link: '#project-shock-absorber', compact: true, report: true, directLink: true, lane: 137
+      link: '#project-shock-absorber', compact: true, report: true, directLink: true, lane: 125
     },
     {
       id: 'prague', type: 'period', category: 'mobility', start: '2026-05-01', end: '2026-08-31',
@@ -208,10 +208,10 @@ if (timelineElement) {
     button.className = `journey-event category-${item.category}${isPeriod ? ' is-period' : ''}${item.milestone ? ' is-milestone' : ''}${item.future ? ' is-future' : ''}${item.compact ? ' is-compact' : ''}${item.report ? ' is-report' : ''}`;
     button.dataset.timelineId = item.id;
     button.setAttribute('aria-label', `${item.title}, ${item.dateLabel}. ${item.directLink ? 'Aller au projet' : 'Afficher les détails'}`);
-    button.style.left = isPeriod ? `${start}%` : `calc(${start}% - 22px)`;
+    button.style.left = isPeriod ? `${start}%` : `calc(${start}% - ${item.report ? 10 : 22}px)`;
     button.style.top = `${item.lane ?? 133}px`;
-    button.style.width = isPeriod ? `${item.displayWidth ?? Math.max(end - start, 1.2)}%` : '44px';
-    button.style.height = '44px';
+    button.style.width = isPeriod ? `${item.displayWidth ?? Math.max(end - start, 1.2)}%` : item.report ? '20px' : '44px';
+    button.style.height = item.report ? '20px' : '44px';
     button.innerHTML = `
       <span class="${isPeriod ? 'journey-period-bar' : 'journey-marker'}" aria-hidden="true"></span>
       <span class="journey-event-label" style="top:${item.labelTop ?? (item.labelPosition === 'above' ? -28 : 38)}px;left:calc(50% + ${item.labelShift ?? 0}px)">${item.label}${item.showAxisDate === false ? '' : `<small class="journey-event-date">${item.dateLabel}</small>`}</span>
