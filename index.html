@@ -24,11 +24,9 @@
         </button>
 
         <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-          <a href="#home">Accueil</a>
+          <a href="#about">À propos</a>
           <a href="#projects-students">Projets étudiants</a>
           <a href="#projects-personal">Projets personnels</a>
-          <a href="#about">À propos</a>
-          <a href="#parcours">Parcours</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -59,6 +57,61 @@
           <div class="hero-visual reveal">
             <div class="profile-card">
               <img src="assets/images/profile.png" alt="Photo de profil de Thomas DE GUZMAN" class="profile-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div class="section-heading reveal">
+            <h2>À propos</h2>
+            <p class="section-intro">
+              Je suis étudiant ingénieur à SeaTech – Université de Toulon. Mon parcours est orienté vers la mécanique des fluides, la simulation numérique et le calcul scientifique. J’aime développer des outils permettant de mieux comprendre, visualiser et analyser des phénomènes physiques.
+            </p>
+          </div>
+          <div class="skills-card reveal">
+            <h3>Compétences clés</h3>
+            <ul>
+              <li>Simulation numérique</li>
+              <li>Mécanique des fluides</li>
+              <li>Programmation scientifique</li>
+              <li>Analyse de données</li>
+              <li>Rédaction technique</li>
+              <li>Travail en équipe</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="parcours" class="section journey-section journey-subsection">
+          <div class="container">
+            <div class="section-heading journey-heading reveal">
+              <span class="eyebrow">Mon parcours</span>
+              <h2>Résumé de mon parcours</h2>
+              <p class="section-intro">Les principales étapes de ma formation et de mes expériences.</p>
+            </div>
+
+            <div class="journey-legend reveal" aria-label="Légende de la frise">
+              <span><i class="journey-legend-dot journey-legend-prepa"></i>Classe préparatoire</span>
+              <span><i class="journey-legend-dot journey-legend-seatech"></i>SeaTech</span>
+              <span><i class="journey-legend-dot journey-legend-work"></i>Expériences professionnelles</span>
+              <span><i class="journey-legend-dot journey-legend-mobility"></i>Projets ou mobilité internationale</span>
+            </div>
+
+            <div class="journey-shell reveal">
+              <p class="journey-scroll-hint"><i class="fas fa-arrows-left-right" aria-hidden="true"></i> Faites défiler la frise horizontalement</p>
+              <div class="journey-scroll" tabindex="0" aria-label="Frise chronologique de 2020 à 2028">
+                <div class="journey-timeline" id="journey-timeline">
+                  <div class="journey-years" id="journey-years" aria-hidden="true"></div>
+                  <div class="journey-axis" aria-hidden="true"><span class="journey-axis-progress"></span></div>
+                  <div class="journey-items" id="journey-items"></div>
+                </div>
+              </div>
+
+              <div class="journey-detail-wrap" id="journey-detail-wrap">
+                <p class="journey-empty" id="journey-empty">Survolez ou sélectionnez un événement pour en savoir plus.</p>
+                <article class="journey-detail" id="journey-detail" aria-live="polite" aria-hidden="true"></article>
+              </div>
             </div>
           </div>
         </div>
@@ -451,61 +504,6 @@
               </div>
               <a class="btn btn-small" href="#home">Voir le portfolio</a>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="container about-grid">
-          <div class="section-heading reveal">
-            <h2>À propos</h2>
-            <p class="section-intro">
-              Je suis étudiant ingénieur à SeaTech – Université de Toulon. Mon parcours est orienté vers la mécanique des fluides, la simulation numérique et le calcul scientifique. J’aime développer des outils permettant de mieux comprendre, visualiser et analyser des phénomènes physiques.
-            </p>
-          </div>
-          <div class="skills-card reveal">
-            <h3>Compétences clés</h3>
-            <ul>
-              <li>Simulation numérique</li>
-              <li>Mécanique des fluides</li>
-              <li>Programmation scientifique</li>
-              <li>Analyse de données</li>
-              <li>Rédaction technique</li>
-              <li>Travail en équipe</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="parcours" class="section journey-section">
-        <div class="container">
-          <div class="section-heading journey-heading reveal">
-            <span class="eyebrow">Mon parcours</span>
-            <h2>Résumé de mon parcours</h2>
-            <p class="section-intro">Les principales étapes de ma formation et de mes expériences.</p>
-          </div>
-
-          <div class="journey-legend reveal" aria-label="Légende de la frise">
-            <span><i class="journey-legend-dot journey-legend-prepa"></i>Classe préparatoire</span>
-            <span><i class="journey-legend-dot journey-legend-seatech"></i>SeaTech</span>
-            <span><i class="journey-legend-dot journey-legend-work"></i>Expériences professionnelles</span>
-            <span><i class="journey-legend-dot journey-legend-mobility"></i>Projets ou mobilité internationale</span>
-          </div>
-
-          <div class="journey-shell reveal">
-            <p class="journey-scroll-hint"><i class="fas fa-arrows-left-right" aria-hidden="true"></i> Faites défiler la frise horizontalement</p>
-            <div class="journey-scroll" tabindex="0" aria-label="Frise chronologique de 2020 à 2028">
-              <div class="journey-timeline" id="journey-timeline">
-                <div class="journey-years" id="journey-years" aria-hidden="true"></div>
-                <div class="journey-axis" aria-hidden="true"><span class="journey-axis-progress"></span></div>
-                <div class="journey-items" id="journey-items"></div>
-              </div>
-            </div>
-
-            <div class="journey-detail-wrap" id="journey-detail-wrap">
-              <p class="journey-empty" id="journey-empty">Survolez ou sélectionnez un événement pour en savoir plus.</p>
-              <article class="journey-detail" id="journey-detail" aria-live="polite" aria-hidden="true"></article>
-            </div>
           </div>
         </div>
       </section>

@@ -389,6 +389,14 @@ img {
     linear-gradient(145deg, #071426 0%, #0b1d35 55%, #071321 100%);
 }
 
+.about-section {
+  padding-bottom: 0;
+}
+
+.journey-subsection {
+  margin-top: 5.5rem;
+}
+
 .journey-heading h2 {
   margin: 0 0 0.75rem;
   color: #fff;
@@ -904,6 +912,10 @@ img {
 
   .section {
     padding: 4.5rem 0;
+  }
+
+  .journey-subsection {
+    margin-top: 4.5rem;
   }
 
   .hero {
