@@ -393,6 +393,11 @@ img {
 
 .journey-subsection {
   margin-top: 5.5rem;
+  padding-bottom: 2rem;
+}
+
+#about + #projects-students {
+  padding-top: 3rem;
 }
 
 .journey-heading h2 {
@@ -461,7 +466,7 @@ img {
 .journey-timeline {
   position: relative;
   min-width: 980px;
-  height: 340px;
+  height: 275px;
   margin: 0 28px;
 }
 
@@ -473,7 +478,7 @@ img {
 
 .journey-year {
   position: absolute;
-  top: 300px;
+  top: 250px;
   transform: translateX(-50%);
   color: var(--primary-dark);
   font-size: 0.88rem;
@@ -484,7 +489,7 @@ img {
 .journey-year::before {
   content: "";
   position: absolute;
-  top: -265px;
+  top: -215px;
   left: 50%;
   width: 1px;
   height: 120px;
@@ -494,7 +499,7 @@ img {
 .journey-year::after {
   content: "";
   position: absolute;
-  top: -145px;
+  top: -95px;
   left: 50%;
   width: 1px;
   height: 14px;
@@ -613,6 +618,11 @@ img {
   font-weight: 500;
 }
 
+.journey-label-secondary {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
 .journey-tooltip {
   position: absolute;
   z-index: 5;
@@ -689,13 +699,13 @@ img {
 
 .journey-detail-wrap {
   position: relative;
-  min-height: 112px;
+  min-height: 0;
   margin-top: 0.75rem;
 }
 
 .journey-empty {
   margin: 0;
-  padding: 2.4rem 1rem;
+  padding: 0.75rem 1rem 0;
   color: var(--muted);
   text-align: center;
 }
@@ -923,7 +933,10 @@ img {
 
   .journey-subsection {
     margin-top: 4.5rem;
+    padding-bottom: 1.5rem;
   }
+
+  #about + #projects-students { padding-top: 2.5rem; }
 
   .hero {
     padding-top: 3.5rem;

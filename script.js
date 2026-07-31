@@ -66,22 +66,22 @@ if (timelineElement) {
       label: 'Classe préparatoire', dateLabel: 'Sept. 2022 – juin 2024', title: 'Classe préparatoire PCSI – PC*',
       description: 'Deux années de classe préparatoire durant lesquelles j’ai développé de solides bases en mathématiques, physique, mécanique et sciences de l’ingénieur.',
       badges: ['Mathématiques', 'Physique', 'Mécanique', 'Sciences de l’ingénieur', 'Méthodes de travail'],
-      lane: 139, labelPosition: 'above', labelTop: -58
+      lane: 139, labelPosition: 'above', labelTop: -42
     },
     {
       id: 'seatech', type: 'period', category: 'seatech', start: seatechStart,
       end: today.toISOString().slice(0, 10), futureEnd: graduationDate,
-      label: 'SeaTech – Cycle ingénieur', dateLabel: 'Sept. 2024 – sept. 2027', title: 'Cycle ingénieur SeaTech',
+      label: 'SeaTech<br><span class="journey-label-secondary">Cycle ingénieur</span>', dateLabel: 'Sept. 2024 – sept. 2027', title: 'Cycle ingénieur SeaTech',
       description: 'Formation d’ingénieur en mécanique, modélisation, calcul scientifique et simulation numérique à SeaTech – Université de Toulon.',
       badges: ['Mécanique des fluides', 'CFD', 'Calcul scientifique', 'Programmation'],
       lane: 139, labelPosition: 'above', labelTop: -58
     },
     {
-      id: 'seagale', type: 'period', category: 'work', start: '2025-06-15', end: '2025-08-05',
-      label: 'Stage SEAGALE', dateLabel: 'Mi-juin – début août 2025', title: 'Stage chez SEAGALE',
+      id: 'seagale', type: 'period', category: 'work', start: '2025-06-01', end: '2025-07-31',
+      label: 'Stage SEAGALE', dateLabel: 'Juin – juillet 2025', title: 'Stage chez SEAGALE',
       description: 'Première expérience en milieu industriel, avec une découverte du fonctionnement de l’entreprise, des méthodes de production et du travail en équipe.',
       badges: ['Environnement industriel', 'Production', 'Organisation', 'Travail en équipe'],
-      image: 'assets/images/project-seagale.jpg', lane: 165, labelPosition: 'below'
+      image: 'assets/images/project-seagale.jpg', lane: 175, labelPosition: 'below', labelShift: -38
     },
     {
       id: 'naca-project', type: 'event', category: 'seatech', start: '2026-01-15',
@@ -98,18 +98,18 @@ if (timelineElement) {
       image: 'assets/images/project-ls0417.png', link: '#project-ls0417', compact: true
     },
     {
-      id: 'prague', type: 'period', category: 'mobility', start: '2026-02-01', end: '2026-08-31',
-      label: 'Stage à Prague', dateLabel: 'Fév. – août 2026', title: 'Stage à Prague – CTU',
+      id: 'prague', type: 'period', category: 'mobility', start: '2026-05-01', end: '2026-08-31',
+      label: 'Stage à Prague', dateLabel: 'Mai – août 2026', title: 'Stage à Prague – CTU',
       description: 'Stage académique au Czech Technical University in Prague consacré à la simulation numérique et à la caractérisation aérodynamique de profils d’ailes.',
       points: ['Simulations CFD sous OpenFOAM', 'Étude du profil LS-0417', 'Analyse des coefficients aérodynamiques', 'Outils Python de post-traitement', 'Comparaison de configurations de profils évolutifs'],
       badges: ['OpenFOAM', 'CFD', 'Python', 'Linux', 'Aérodynamique', 'Analyse de données'],
-      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 210, labelPosition: 'below'
+      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 175, labelPosition: 'below', labelShift: 42
     },
     {
       id: 'diploma', type: 'event', category: 'formation', start: graduationDate,
-      label: 'Diplôme d’ingénieur', dateLabel: 'Prévu en septembre 2027', title: 'Diplôme d’ingénieur SeaTech',
+      label: 'Diplôme d’ingénieur', dateLabel: 'Septembre 2027', title: 'Diplôme d’ingénieur SeaTech',
       description: 'Obtention prévue du diplôme d’ingénieur de SeaTech, avec une spécialisation en mécanique, modélisation et simulation numérique.',
-      badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'above', labelTop: -48, showAxisDate: false
+      badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'above', labelTop: -48
     }
   ];
 
