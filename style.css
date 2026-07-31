@@ -308,7 +308,7 @@ img {
   border-radius: 1.1rem 1.1rem 0 0;
   overflow: hidden;
   background: var(--light);
-  height: 180px;
+  aspect-ratio: 16 / 9;
 }
 
 .project-image img {
