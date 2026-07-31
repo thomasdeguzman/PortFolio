@@ -126,6 +126,13 @@ if (timelineElement) {
       link: '#project-manta', compact: true, report: true, directLink: true, lane: 169
     },
     {
+      id: 'report-seagale', type: 'event', category: 'seatech', start: '2025-08-18',
+      label: 'Rapport SEAGALE', dateLabel: '18 août 2025', title: 'Stage ouvrier chez SEAGALE',
+      description: 'Rapport consacré à la découverte du milieu industriel et des pratiques de production.',
+      badges: ['Stage', 'Industrie', 'Organisation'], image: 'assets/images/project-seagale.jpg',
+      link: '#project-seagale', compact: true, report: true, directLink: true, lane: 147
+    },
+    {
       id: 'report-heat-2d', type: 'event', category: 'seatech', start: '2025-10-13',
       label: 'Chaleur 2D', dateLabel: '13 octobre 2025', title: 'Équation de la chaleur en 2D',
       description: 'Résolution par différences finies de l’équation de la chaleur en deux dimensions.',
@@ -147,8 +154,8 @@ if (timelineElement) {
       link: '#project-elliptic-fem', compact: true, report: true, directLink: true, lane: 169
     },
     {
-      id: 'report-naca', type: 'event', category: 'seatech', start: '2026-01-15',
-      label: 'NACA 4412', dateLabel: 'Janvier 2026', title: 'Simulation CFD d’un profil NACA 4412',
+      id: 'report-naca', type: 'event', category: 'seatech', start: '2026-04-29',
+      label: 'NACA 4412', dateLabel: '29 avril 2026', title: 'Simulation CFD d’un profil NACA 4412',
       description: 'Étude numérique de l’écoulement autour d’un profil NACA 4412.',
       badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-naca4412.png',
       link: '#project-naca4412', compact: true, report: true, directLink: true, lane: 147
@@ -159,6 +166,13 @@ if (timelineElement) {
       description: 'Modélisation et analyse par éléments finis sous Abaqus.',
       badges: ['Abaqus', 'Éléments finis', 'Mécanique'], image: 'assets/images/project-shock-absorber.png',
       link: '#project-shock-absorber', compact: true, report: true, directLink: true, lane: 125
+    },
+    {
+      id: 'report-ls0417', type: 'event', category: 'seatech', start: '2026-08-23',
+      label: 'LS-0417', dateLabel: '23 août 2026', title: 'Simulation CFD du profil LS-0417',
+      description: 'Étude numérique de l’écoulement autour du profil aérodynamique LS-0417.',
+      badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-ls0417.png',
+      link: '#project-ls0417', compact: true, report: true, directLink: true, lane: 147
     },
     {
       id: 'prague', type: 'period', category: 'mobility', start: '2026-05-01', end: '2026-08-31',
