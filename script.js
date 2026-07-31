@@ -81,7 +81,7 @@ if (timelineElement) {
       label: 'Stage SEAGALE', dateLabel: 'Juin – juillet 2025', title: 'Stage chez SEAGALE',
       description: 'Première expérience en milieu industriel, avec une découverte du fonctionnement de l’entreprise, des méthodes de production et du travail en équipe.',
       badges: ['Environnement industriel', 'Production', 'Organisation', 'Travail en équipe'],
-      image: 'assets/images/project-seagale.jpg', lane: 160, compact: true
+      image: 'assets/images/project-seagale.jpg', lane: 160, compact: true, displayWidth: 2.2
     },
     {
       id: 'naca-project', type: 'event', category: 'seatech', start: '2026-01-15',
@@ -103,7 +103,7 @@ if (timelineElement) {
       description: 'Stage académique au Czech Technical University in Prague consacré à la simulation numérique et à la caractérisation aérodynamique de profils d’ailes.',
       points: ['Simulations CFD sous OpenFOAM', 'Étude du profil LS-0417', 'Analyse des coefficients aérodynamiques', 'Outils Python de post-traitement', 'Comparaison de configurations de profils évolutifs'],
       badges: ['OpenFOAM', 'CFD', 'Python', 'Linux', 'Aérodynamique', 'Analyse de données'],
-      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 160, compact: true
+      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 160, compact: true, displayWidth: 4.4
     },
     {
       id: 'diploma', type: 'event', category: 'formation', start: graduationDate,
@@ -147,7 +147,7 @@ if (timelineElement) {
     button.setAttribute('aria-label', `${item.title}, ${item.dateLabel}. Afficher les détails`);
     button.style.left = isPeriod ? `${start}%` : `calc(${start}% - 22px)`;
     button.style.top = `${isPeriod ? item.lane : 133}px`;
-    button.style.width = isPeriod ? `${Math.max(end - start, 1.2)}%` : '44px';
+    button.style.width = isPeriod ? `${item.displayWidth ?? Math.max(end - start, 1.2)}%` : '44px';
     button.style.height = '44px';
     button.innerHTML = `
       <span class="${isPeriod ? 'journey-period-bar' : 'journey-marker'}" aria-hidden="true"></span>
