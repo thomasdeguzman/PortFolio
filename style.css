@@ -626,9 +626,9 @@ img {
 }
 
 .journey-event.is-report .journey-marker {
-  top: 4px;
-  width: 12px;
-  height: 12px;
+  top: 0;
+  width: 10px;
+  height: 10px;
   border-width: 2px;
   box-shadow: 0 0 0 1px var(--journey-color);
 }

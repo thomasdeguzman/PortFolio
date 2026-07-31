@@ -191,6 +191,17 @@ if (timelineElement) {
     return Math.max(0, Math.min(100, ratio * 100));
   };
 
+  const reportPositions = new Map();
+  let previousReportPosition = -Infinity;
+  timelineData
+    .filter((item) => item.report)
+    .sort((a, b) => new Date(a.start) - new Date(b.start))
+    .forEach((item) => {
+      const adjustedPosition = Math.max(datePosition(item.start), previousReportPosition + 1.1);
+      reportPositions.set(item.id, adjustedPosition);
+      previousReportPosition = adjustedPosition;
+    });
+
   for (let year = 2020; year <= 2028; year += 1) {
     const tick = document.createElement('span');
     tick.className = 'journey-year';
@@ -201,17 +212,17 @@ if (timelineElement) {
 
   const makeEventButton = (item) => {
     const button = document.createElement('button');
-    const start = datePosition(item.start);
+    const start = item.report ? reportPositions.get(item.id) : datePosition(item.start);
     const end = item.end ? datePosition(item.end) : start;
     const isPeriod = item.type === 'period';
     button.type = 'button';
     button.className = `journey-event category-${item.category}${isPeriod ? ' is-period' : ''}${item.milestone ? ' is-milestone' : ''}${item.future ? ' is-future' : ''}${item.compact ? ' is-compact' : ''}${item.report ? ' is-report' : ''}`;
     button.dataset.timelineId = item.id;
     button.setAttribute('aria-label', `${item.title}, ${item.dateLabel}. ${item.directLink ? 'Aller au projet' : 'Afficher les détails'}`);
-    button.style.left = isPeriod ? `${start}%` : `calc(${start}% - ${item.report ? 10 : 22}px)`;
-    button.style.top = `${item.lane ?? 133}px`;
-    button.style.width = isPeriod ? `${item.displayWidth ?? Math.max(end - start, 1.2)}%` : item.report ? '20px' : '44px';
-    button.style.height = item.report ? '20px' : '44px';
+    button.style.left = isPeriod ? `${start}%` : `calc(${start}% - ${item.report ? 5 : 22}px)`;
+    button.style.top = `${item.report ? 150 : (item.lane ?? 133)}px`;
+    button.style.width = isPeriod ? `${item.displayWidth ?? Math.max(end - start, 1.2)}%` : item.report ? '10px' : '44px';
+    button.style.height = item.report ? '10px' : '44px';
     button.innerHTML = `
       <span class="${isPeriod ? 'journey-period-bar' : 'journey-marker'}" aria-hidden="true"></span>
       <span class="journey-event-label" style="top:${item.labelTop ?? (item.labelPosition === 'above' ? -28 : 38)}px;left:calc(50% + ${item.labelShift ?? 0}px)">${item.label}${item.showAxisDate === false ? '' : `<small class="journey-event-date">${item.dateLabel}</small>`}</span>
