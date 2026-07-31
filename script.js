@@ -59,7 +59,7 @@ if (timelineElement) {
       id: 'bac', type: 'event', category: 'formation', start: '2022-07-01',
       label: 'Baccalauréat', dateLabel: 'Juillet 2022', title: 'Obtention du baccalauréat',
       description: 'Obtention du baccalauréat et début de mon parcours dans l’enseignement supérieur scientifique.',
-      badges: ['Formation'], milestone: true, labelPosition: 'above'
+      badges: ['Formation'], milestone: true, labelPosition: 'above', labelTop: -36
     },
     {
       id: 'prepa', type: 'period', category: 'prepa', start: '2022-09-01', end: '2024-06-30',
@@ -109,7 +109,7 @@ if (timelineElement) {
       id: 'diploma', type: 'event', category: 'formation', start: graduationDate,
       label: 'Diplôme d’ingénieur', dateLabel: 'Septembre 2027', title: 'Diplôme d’ingénieur SeaTech',
       description: 'Obtention prévue du diplôme d’ingénieur de SeaTech, avec une spécialisation en mécanique, modélisation et simulation numérique.',
-      badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'above', labelTop: -28
+      badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'above', labelTop: -36
     }
   ];
 
