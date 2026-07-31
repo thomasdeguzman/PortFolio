@@ -580,6 +580,7 @@ img {
   box-shadow: 0 0 0 2px var(--journey-color);
   transform: translateX(-50%);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  scroll-margin-top: 5.5rem;
 }
 
 .journey-event.is-milestone .journey-marker {
