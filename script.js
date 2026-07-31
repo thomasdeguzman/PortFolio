@@ -141,7 +141,7 @@ if (timelineElement) {
     },
     {
       id: 'report-heat-1d', type: 'event', category: 'seatech', start: '2025-11-10',
-      label: 'Chaleur 1D', dateLabel: '10 novembre 2025', title: 'Équation de la chaleur en 1D',
+      label: 'Chaleur 1D', dateLabel: '10 novembre 2025', title: 'Résolution numérique de l’équation de la chaleur unidimensionnelle',
       description: 'Comparaison de schémas numériques pour un problème de diffusion thermique.',
       badges: ['Fortran90', 'Différences finies'], image: 'assets/images/project-heat-eq-1d.png',
       link: '#project-heat-1d', compact: true, report: true, directLink: true, lane: 125
@@ -156,21 +156,21 @@ if (timelineElement) {
     {
       id: 'report-naca', type: 'event', category: 'seatech', start: '2026-04-29',
       label: 'NACA 4412', dateLabel: '29 avril 2026', title: 'Simulation CFD d’un profil NACA 4412',
-      description: 'Étude numérique de l’écoulement autour d’un profil NACA 4412.',
+      description: 'Modélisation turbulente RANS, analyse des coefficients aérodynamiques et étude de convergence de maillage.',
       badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-naca4412.png',
       link: '#project-naca4412', compact: true, report: true, directLink: true, lane: 147
     },
     {
       id: 'report-shock', type: 'event', category: 'seatech', start: '2026-03-27',
       label: 'Amortisseur', dateLabel: '27 mars 2026', title: 'Amortisseur de choc à lames',
-      description: 'Modélisation et analyse par éléments finis sous Abaqus.',
+      description: 'Modélisation et analyse numérique d’un système mécanique avec le logiciel Abaqus.',
       badges: ['Abaqus', 'Éléments finis', 'Mécanique'], image: 'assets/images/project-shock-absorber.png',
       link: '#project-shock-absorber', compact: true, report: true, directLink: true, lane: 125
     },
     {
       id: 'report-ls0417', type: 'event', category: 'seatech', start: '2026-08-23',
-      label: 'LS-0417', dateLabel: '23 août 2026', title: 'Simulation CFD du profil LS-0417',
-      description: 'Étude numérique de l’écoulement autour du profil aérodynamique LS-0417.',
+      label: 'LS-0417', dateLabel: '23 août 2026', title: 'Impact d’un profil évolutif sur l’aile LS-0417',
+      description: 'Simulations CFD 2D et 3D sous OpenFOAM, puis validation expérimentale en soufflerie.',
       badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-ls0417.png',
       link: '#project-ls0417', compact: true, report: true, directLink: true, lane: 147
     },
