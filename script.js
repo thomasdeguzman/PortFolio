@@ -88,7 +88,7 @@ if (timelineElement) {
       label: 'TIPE Halo F1', dateLabel: '2 juillet 2024', title: 'TIPE — Le Halo en Formule 1',
       description: 'Étude des choix de conception du halo et de son rôle dans la protection du pilote.',
       badges: ['TIPE', 'Modélisation', 'Expérimentation'], image: 'assets/images/project-TIPE.png',
-      link: '#project-tipe', compact: true, report: true, directLink: true, lane: 147
+      link: '#project-tipe', compact: true, report: true, directLink: true, lane: 147, timelinePosition: '2024-06-30'
     },
     {
       id: 'report-interpolation', type: 'event', category: 'seatech', start: '2025-04-10',
@@ -197,7 +197,7 @@ if (timelineElement) {
     .filter((item) => item.report)
     .sort((a, b) => new Date(a.start) - new Date(b.start))
     .forEach((item) => {
-      const adjustedPosition = Math.max(datePosition(item.start), previousReportPosition + 1.1);
+      const adjustedPosition = Math.max(datePosition(item.timelinePosition ?? item.start), previousReportPosition + 1.1);
       reportPositions.set(item.id, adjustedPosition);
       previousReportPosition = adjustedPosition;
     });
