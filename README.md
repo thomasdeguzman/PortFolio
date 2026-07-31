@@ -50,7 +50,7 @@ Chaque projet a une image associée :
 | Profil LS-0417 | `project-ls0417.png` |
 | NACA 4412 | `project-naca4412.jpg` |
 | Amortisseur | `project-shock-absorber.jpg` |
-| Chaleur 1D | `project-heat-eq-1d.jpg` |
+| Chaleur 1D | `project-heat-eq-1d.png` |
 | Chaleur 2D | `project-heat-eq-2d.jpg` |
 | Stage Seagale | `project-seagale.jpg` |
 | Drone MANTA | `project-manta.jpg` |

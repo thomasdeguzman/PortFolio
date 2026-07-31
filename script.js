@@ -66,43 +66,36 @@ if (timelineElement) {
       label: 'Classe préparatoire', dateLabel: 'Sept. 2022 – juin 2024', title: 'Classe préparatoire PCSI – PC*',
       description: 'Deux années de classe préparatoire durant lesquelles j’ai développé de solides bases en mathématiques, physique, mécanique et sciences de l’ingénieur.',
       badges: ['Mathématiques', 'Physique', 'Mécanique', 'Sciences de l’ingénieur', 'Méthodes de travail'],
-      lane: 70, labelPosition: 'above'
-    },
-    {
-      id: 'seatech-entry', type: 'event', category: 'seatech', start: seatechStart,
-      label: 'Entrée à SeaTech', dateLabel: 'Septembre 2024', title: 'Entrée à SeaTech',
-      description: 'Intégration du cycle ingénieur à SeaTech – Université de Toulon, avec une formation orientée vers la mécanique, la modélisation et la simulation numérique.',
-      badges: ['Mécanique des fluides', 'Calcul scientifique', 'Programmation', 'Simulation numérique', 'Méthodes numériques'],
-      labelPosition: 'below', labelShift: -62, labelTop: 42
+      lane: 139, labelPosition: 'above', labelTop: -58
     },
     {
       id: 'seatech', type: 'period', category: 'seatech', start: seatechStart,
       end: today.toISOString().slice(0, 10), futureEnd: graduationDate,
-      label: 'Cycle ingénieur SeaTech', dateLabel: 'Sept. 2024 – aujourd’hui', title: 'Cycle ingénieur SeaTech',
+      label: 'SeaTech – Cycle ingénieur', dateLabel: 'Sept. 2024 – sept. 2027', title: 'Cycle ingénieur SeaTech',
       description: 'Formation d’ingénieur en mécanique, modélisation, calcul scientifique et simulation numérique à SeaTech – Université de Toulon.',
       badges: ['Mécanique des fluides', 'CFD', 'Calcul scientifique', 'Programmation'],
-      lane: 105, labelPosition: 'above'
+      lane: 139, labelPosition: 'above', labelTop: -58
     },
     {
       id: 'seagale', type: 'event', category: 'work', start: '2025-07-15',
       label: 'Stage SEAGALE', dateLabel: 'Juin – août 2025', title: 'Stage chez SEAGALE',
       description: 'Première expérience en milieu industriel, avec une découverte du fonctionnement de l’entreprise, des méthodes de production et du travail en équipe.',
       badges: ['Environnement industriel', 'Production', 'Organisation', 'Travail en équipe'],
-      image: 'assets/images/project-seagale.jpg', labelPosition: 'below', labelShift: -12, labelTop: 72
+      image: 'assets/images/project-seagale.jpg', labelPosition: 'below', labelShift: 0, labelTop: 48
     },
     {
       id: 'naca-project', type: 'event', category: 'seatech', start: '2026-01-15',
       label: 'Projet NACA 4412', dateLabel: '2026', title: 'Simulation CFD d’un profil NACA 4412',
       description: 'Étude numérique de l’écoulement autour d’un profil NACA 4412 pour différents angles d’attaque, avec analyse des coefficients de portance, de traînée et de la convergence des simulations.',
       badges: ['OpenFOAM', 'CFD', 'Python', 'Linux', 'Maillage', 'Post-traitement'],
-      image: 'assets/images/project-naca4412.png', link: '#project-naca4412', labelPosition: 'above', labelShift: 10
+      image: 'assets/images/project-naca4412.png', link: '#project-naca4412', compact: true
     },
     {
       id: 'ls-project', type: 'event', category: 'seatech', start: '2026-03-15',
       label: 'Projet LS-0417', dateLabel: '2026', title: 'Simulation du profil LS-0417',
       description: 'Étude numérique d’un écoulement bidimensionnel autour du profil aérodynamique LS-0417 et analyse de ses performances.',
       badges: ['OpenFOAM', 'CFD', 'Python', 'Aérodynamique', 'Post-traitement'],
-      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', labelPosition: 'below', labelShift: 72, labelTop: 42
+      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', compact: true
     },
     {
       id: 'prague', type: 'period', category: 'mobility', start: '2026-02-01', end: '2026-08-31',
@@ -116,7 +109,7 @@ if (timelineElement) {
       id: 'diploma', type: 'event', category: 'formation', start: graduationDate,
       label: 'Diplôme d’ingénieur', dateLabel: 'Prévu en septembre 2027', title: 'Diplôme d’ingénieur SeaTech',
       description: 'Obtention prévue du diplôme d’ingénieur de SeaTech, avec une spécialisation en mécanique, modélisation et simulation numérique.',
-      badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'below'
+      badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'above', labelTop: -48, showAxisDate: false
     }
   ];
 
@@ -149,7 +142,7 @@ if (timelineElement) {
     const end = item.end ? datePosition(item.end) : start;
     const isPeriod = item.type === 'period';
     button.type = 'button';
-    button.className = `journey-event category-${item.category}${item.milestone ? ' is-milestone' : ''}${item.future ? ' is-future' : ''}`;
+    button.className = `journey-event category-${item.category}${item.milestone ? ' is-milestone' : ''}${item.future ? ' is-future' : ''}${item.compact ? ' is-compact' : ''}`;
     button.dataset.timelineId = item.id;
     button.setAttribute('aria-label', `${item.title}, ${item.dateLabel}. Afficher les détails`);
     button.style.left = isPeriod ? `${start}%` : `calc(${start}% - 22px)`;
@@ -158,7 +151,7 @@ if (timelineElement) {
     button.style.height = '44px';
     button.innerHTML = `
       <span class="${isPeriod ? 'journey-period-bar' : 'journey-marker'}" aria-hidden="true"></span>
-      <span class="journey-event-label" style="top:${item.labelTop ?? (item.labelPosition === 'above' ? -28 : 38)}px;left:calc(50% + ${item.labelShift ?? 0}px)">${item.label}<small class="journey-event-date">${item.dateLabel}</small></span>
+      <span class="journey-event-label" style="top:${item.labelTop ?? (item.labelPosition === 'above' ? -28 : 38)}px;left:calc(50% + ${item.labelShift ?? 0}px)">${item.label}${item.showAxisDate === false ? '' : `<small class="journey-event-date">${item.dateLabel}</small>`}</span>
       <span class="journey-tooltip" role="tooltip">${item.title}<br>${item.dateLabel}</span>`;
 
     if (item.futureEnd) {
