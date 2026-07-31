@@ -81,7 +81,7 @@ if (timelineElement) {
       label: 'Stage SEAGALE', dateLabel: 'Juin – juillet 2025', title: 'Stage chez SEAGALE',
       description: 'Première expérience en milieu industriel, avec une découverte du fonctionnement de l’entreprise, des méthodes de production et du travail en équipe.',
       badges: ['Environnement industriel', 'Production', 'Organisation', 'Travail en équipe'],
-      image: 'assets/images/project-seagale.jpg', lane: 160, labelPosition: 'below', labelShift: -38, labelTop: 70
+      image: 'assets/images/project-seagale.jpg', lane: 160, compact: true
     },
     {
       id: 'naca-project', type: 'event', category: 'seatech', start: '2026-01-15',
@@ -103,13 +103,13 @@ if (timelineElement) {
       description: 'Stage académique au Czech Technical University in Prague consacré à la simulation numérique et à la caractérisation aérodynamique de profils d’ailes.',
       points: ['Simulations CFD sous OpenFOAM', 'Étude du profil LS-0417', 'Analyse des coefficients aérodynamiques', 'Outils Python de post-traitement', 'Comparaison de configurations de profils évolutifs'],
       badges: ['OpenFOAM', 'CFD', 'Python', 'Linux', 'Aérodynamique', 'Analyse de données'],
-      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 160, labelPosition: 'below', labelShift: 42, labelTop: 70
+      image: 'assets/images/project-ls0417.png', link: '#project-ls0417', lane: 160, compact: true
     },
     {
       id: 'diploma', type: 'event', category: 'formation', start: graduationDate,
       label: 'Diplôme d’ingénieur', dateLabel: 'Septembre 2027', title: 'Diplôme d’ingénieur SeaTech',
       description: 'Obtention prévue du diplôme d’ingénieur de SeaTech, avec une spécialisation en mécanique, modélisation et simulation numérique.',
-      badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'above', labelTop: -48
+      badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'above', labelTop: -28
     }
   ];
 
