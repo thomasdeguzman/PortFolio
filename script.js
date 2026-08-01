@@ -59,13 +59,13 @@ if (timelineElement) {
       id: 'bia', type: 'event', category: 'formation', start: '2020-07-01',
       label: 'BIA', dateLabel: 'Juillet 2020', title: 'Brevet d’Initiation Aéronautique',
       description: 'Obtention du BIA, validant des connaissances générales dans le domaine de l’aéronautique.',
-      badges: ['Aéronautique', 'Certification'], milestone: true, labelPosition: 'above', labelTop: -36
+      badges: ['Diplôme', 'Aéronautique'], milestone: true, labelPosition: 'above', labelTop: -36
     },
     {
       id: 'bac', type: 'event', category: 'formation', start: '2022-07-01',
       label: 'Baccalauréat', dateLabel: 'Juillet 2022', title: 'Obtention du baccalauréat',
       description: 'Obtention du baccalauréat et début de mon parcours dans l’enseignement supérieur scientifique.',
-      badges: ['Formation'], milestone: true, labelPosition: 'above', labelTop: -36
+      badges: ['Diplôme'], milestone: true, labelPosition: 'above', labelTop: -36
     },
     {
       id: 'prepa', type: 'period', category: 'prepa', start: '2022-09-01', end: '2024-06-30',
