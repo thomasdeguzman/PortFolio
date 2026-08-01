@@ -63,7 +63,7 @@ if (timelineElement) {
     },
     {
       id: 'prepa', type: 'period', category: 'prepa', start: '2022-09-01', end: '2024-06-30',
-      label: 'Classe préparatoire', dateLabel: 'Sept. 2022 – juin 2024', title: 'Classe préparatoire PCSI – PC*',
+      label: 'Classe préparatoire', dateLabel: 'Sept. 2022 – juin 2024', title: 'Classe préparatoire PCSI – PSI',
       description: 'Deux années de classe préparatoire durant lesquelles j’ai développé de solides bases en mathématiques, physique, mécanique et sciences de l’ingénieur.',
       badges: ['Mathématiques', 'Physique', 'Mécanique', 'Sciences de l’ingénieur', 'Méthodes de travail'],
       lane: 139, labelPosition: 'above', labelTop: -42
