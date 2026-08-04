@@ -78,13 +78,6 @@ img {
   align-items: center;
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  flex-shrink: 0;
-}
-
 .site-nav a {
   color: var(--text);
   font-weight: 500;
@@ -251,6 +244,7 @@ img {
   font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .language-option {
