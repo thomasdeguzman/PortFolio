@@ -281,9 +281,13 @@ function translateTextNodes(language) {
       node.nodeValue = source;
       continue;
     }
-    const trimmed = source.trim();
-    const translated = translations.get(trimmed);
-    if (translated) node.nodeValue = source.replace(trimmed, translated);
+    const normalized = source.replace(/\s+/g, ' ').trim();
+    const translated = translations.get(normalized);
+    if (translated) {
+      const leadingWhitespace = source.match(/^\s*/)?.[0] || '';
+      const trailingWhitespace = source.match(/\s*$/)?.[0] || '';
+      node.nodeValue = `${leadingWhitespace}${translated}${trailingWhitespace}`;
+    }
   }
 }
 
