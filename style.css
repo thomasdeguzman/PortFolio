@@ -215,16 +215,18 @@ img {
 .profile-card {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 4 / 5;
   border-radius: 1.5rem;
   box-shadow: var(--shadow);
 }
 
 .profile-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   border-radius: 1.5rem;
   object-fit: cover;
+  object-position: center 42%;
 }
 
 .section-heading {
