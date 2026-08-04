@@ -275,6 +275,17 @@ const attributeTranslations = {
 const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
 
+const sectionTranslations = {
+  'academic-projects-intro': {
+    fr: 'Cette section rassemble les principaux projets réalisés au cours de ma formation d’ingénieur. Ils portent sur la simulation numérique, la mécanique des fluides, les méthodes numériques et le calcul scientifique.',
+    en: 'This section presents the main projects completed during my engineering studies. They cover numerical simulation, fluid mechanics, numerical methods and scientific computing.'
+  },
+  'personal-projects-intro': {
+    fr: 'Cette section regroupe mes projets personnels autour du développement web, de l’intelligence artificielle, de l’automatisation et de la visualisation de données.',
+    en: 'This section presents my personal projects in web development, artificial intelligence, automation and data visualisation.'
+  }
+};
+
 function translateTextNodes(language) {
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   let node;
@@ -333,6 +344,10 @@ function setLanguage(language) {
   document.querySelector('meta[name="description"]').content = selected === 'en'
     ? 'Portfolio of Thomas DE GUZMAN, engineering student specialising in fluid mechanics, CFD and numerical simulation.'
     : 'Portfolio personnel de Thomas DE GUZMAN, étudiant ingénieur en mécanique des fluides, CFD et simulation numérique.';
+  document.querySelectorAll('[data-i18n-section]').forEach((element) => {
+    const content = sectionTranslations[element.dataset.i18nSection];
+    if (content) element.textContent = content[selected];
+  });
   translateTextNodes(selected);
   translateAttributes(selected);
   document.querySelectorAll('[data-language-option]').forEach((option) => {
