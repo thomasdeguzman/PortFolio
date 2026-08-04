@@ -17,12 +17,6 @@
       <div class="container nav-wrapper">
         <a href="#home" class="logo">Thomas DE GUZMAN</a>
 
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
         <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
           <a href="#about">À propos</a>
           <a href="#projects-students">Projets étudiants</a>
@@ -30,6 +24,19 @@
           <a href="#credentials">Diplômes et certifications</a>
           <a href="#contact">Contact</a>
         </nav>
+
+        <div class="header-actions">
+          <button class="language-toggle" type="button" aria-label="Passer le site en anglais" aria-pressed="false">
+            <span class="language-option is-active" data-language-option="fr">FR</span>
+            <span aria-hidden="true">/</span>
+            <span class="language-option" data-language-option="en">EN</span>
+          </button>
+          <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -580,5 +587,6 @@
     <button class="back-to-top" aria-label="Retour en haut">↑</button>
 
     <script src="script.js"></script>
+    <script src="i18n.js?v=2"></script>
   </body>
 </html>
