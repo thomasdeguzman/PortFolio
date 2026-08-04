@@ -10,7 +10,7 @@ const translations = new Map(Object.entries({
   'Voir mes projets': 'View my projects',
   'Me contacter': 'Contact me',
   'Présentation': 'Profile',
-  'Mon parcours d’ingénieur m’a permis de développer des compétences scientifiques et techniques à travers différents projets, allant de la modélisation de phénomènes physiques au développement d’outils numériques.': 'My engineering studies have enabled me to develop scientific and technical skills through projects ranging from physical-phenomena modelling to the development of numerical tools.',
+  'Mon parcours d’ingénieur m’a permis de développer des compétences scientifiques et techniques à travers différents projets, allant de la modélisation de phénomènes physiques au développement d’outils numériques.': 'My engineering studies have enabled me to develop scientific and technical skills through projects ranging from modelling physical phenomena to developing numerical tools.',
   'J’apprécie particulièrement comprendre un problème, construire une méthode pour l’étudier et analyser les résultats obtenus.': 'I particularly enjoy understanding a problem, designing a method to investigate it and analysing the resulting data.',
   'Compétences clés': 'Key skills',
   'Mécanique des fluides': 'Fluid mechanics',
@@ -38,6 +38,7 @@ const translations = new Map(Object.entries({
   'mécanique': 'mechanics',
   'différences finies': 'finite differences',
   'analyse numérique': 'numerical analysis',
+  'analyse RANS': 'RANS analysis',
   'outils de production': 'production tools',
   'production industrielle': 'industrial production',
   'travail en équipe': 'teamwork',
@@ -56,6 +57,7 @@ const translations = new Map(Object.entries({
   'diplôme': 'degree',
   'aéronautique': 'aeronautics',
   'parcours scientifique': 'scientific studies',
+  'EDP': 'PDEs',
   'Étude de l\'impact d\'un profil évolutif sur le profil d\'aile LS-0417': 'Study of the impact of a morphing profile on the LS-0417 airfoil',
   'Simulations CFD sous OpenFOAM pour la caractérisation aérodynamique et la validation de profils évolutifs. Études numériques 2D et 3D puis validation expérimentale en soufflerie.': 'OpenFOAM CFD simulations for aerodynamic characterisation and validation of morphing profiles. Two- and three-dimensional numerical studies followed by experimental wind-tunnel validation.',
   "Caractériser le comportement aérodynamique du profil LS-0417 par simulation numérique.": 'Characterise the aerodynamic behaviour of the LS-0417 airfoil through numerical simulation.',
@@ -113,7 +115,7 @@ const translations = new Map(Object.entries({
   "Étude des méthodes d'intégration numérique": 'Study of numerical integration methods',
   "Comparaison de plusieurs méthodes d'approximation numérique d'intégrales.": 'Comparison of several numerical methods for approximating integrals.',
   "Évaluer la précision et l'efficacité de différentes méthodes de quadrature numérique.": 'Evaluate the accuracy and efficiency of different numerical quadrature methods.',
-  'Rectangles, point milieu, trapèzes, Simpson et développement d’une méthode barycentrique pondérée.': 'Rectangle, midpoint, trapezoidal and Simpson rules, and development of a weighted barycentric method.',
+  "Rectangles, point milieu, trapèzes, Simpson et développement d'une méthode barycentrique pondérée.": 'Rectangle, midpoint, trapezoidal and Simpson rules, and development of a weighted barycentric method.',
   'Comparaison des erreurs et de la rapidité sur plusieurs fonctions tests.': 'Comparison of error and execution speed across several test functions.',
   "MATLAB, intégration numérique, quadrature, analyse d'erreur et comparaison de méthodes.": 'MATLAB, numerical integration, quadrature, error analysis and method comparison.',
   "Résolution numérique d'équations différentielles": 'Numerical solution of differential equations',
@@ -146,6 +148,9 @@ const translations = new Map(Object.entries({
   'Obtention du baccalauréat avant mon entrée en classe préparatoire scientifique.': 'Awarded the French Baccalaureate before entering a scientific preparatory programme.',
   'Consulter le diplôme': 'View certificate',
   'Téléphone :': 'Phone:',
+  'Email :': 'Email:',
+  'LinkedIn :': 'LinkedIn:',
+  'GitHub :': 'GitHub:',
   'Localisation :': 'Location:',
   'Profil LinkedIn': 'LinkedIn profile',
   'Profil GitHub': 'GitHub profile',
@@ -305,10 +310,19 @@ function translateAttributes(language) {
       const source = originals[key];
       if (source === null) return;
       if (language === 'fr') element.setAttribute(attribute, source);
-      else element.setAttribute(attribute, attributeTranslations[source] || source
-        .replace('Illustration de ', 'Illustration of ')
-        .replace('Afficher les détails', 'Show details')
-        .replace('Aller au projet', 'Go to project'));
+      else {
+        let translated = attributeTranslations[source] || source;
+        [...translations.entries()]
+          .sort(([a], [b]) => b.length - a.length)
+          .forEach(([french, english]) => {
+            translated = translated.split(french).join(english);
+          });
+        translated = translated
+          .replace('Illustration de ', 'Illustration of ')
+          .replace('Afficher les détails', 'Show details')
+          .replace('Aller au projet', 'Go to project');
+        element.setAttribute(attribute, translated);
+      }
     });
   });
 }
