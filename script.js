@@ -49,7 +49,7 @@ backToTopButton?.addEventListener('click', () => {
 const timelineElement = document.querySelector('#journey-timeline');
 
 if (timelineElement) {
-  const TIMELINE_START = new Date('2020-01-01T00:00:00');
+  const TIMELINE_START = new Date('2019-09-01T00:00:00');
   const TIMELINE_END = new Date('2028-12-31T23:59:59');
   const today = new Date();
   const seatechStart = '2024-09-01';
@@ -57,11 +57,11 @@ if (timelineElement) {
 
   const timelineData = [
     {
-      id: 'lycee', type: 'period', category: 'lycee', start: '2020-01-01', end: '2022-06-30',
-      label: '2de / 1re / Tle scientifique', dateLabel: 'Janv. 2020 – juin 2022', title: 'Lycée – parcours scientifique',
-      description: 'Trois années de lycée dans un parcours scientifique, jusqu’à l’obtention du baccalauréat.',
+      id: 'lycee', type: 'period', category: 'lycee', start: '2019-09-01', end: '2022-06-30',
+      label: '2de / 1re / Tle scientifique', dateLabel: 'Sept. 2019 – juin 2022', title: 'Lycée – parcours scientifique',
+      description: 'De septembre 2019 à juin 2022, trois années de lycée dans un parcours scientifique, jusqu’à l’obtention du baccalauréat.',
       badges: ['Mathématiques', 'Physique-chimie', 'Sciences de l’ingénieur', 'Option maths expertes'],
-      lane: 139, labelPosition: 'below', labelTop: 38
+      lane: 139, labelPosition: 'above', labelTop: -42, labelShift: 36
     },
     {
       id: 'bia', type: 'event', category: 'formation', start: '2020-07-01',
@@ -230,7 +230,7 @@ if (timelineElement) {
       previousReportPosition = adjustedPosition;
     });
 
-  for (let year = 2020; year <= 2028; year += 1) {
+  for (let year = 2019; year <= 2028; year += 1) {
     const tick = document.createElement('span');
     tick.className = 'journey-year';
     tick.style.left = `${datePosition(`${year}-01-01`)}%`;

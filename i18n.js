@@ -176,8 +176,10 @@ const translations = new Map(Object.entries({
   'Brevet d’Initiation Aéronautique': 'Aeronautical Initiation Certificate',
   '2de / 1re / Tle scientifique': 'Years 10–12 – Science track',
   'Janv. 2020 – juin 2022': 'Jan. 2020 – June 2022',
+  'Sept. 2019 – juin 2022': 'Sept. 2019 – June 2022',
   'Lycée – parcours scientifique': 'High school – Science track',
   'Trois années de lycée dans un parcours scientifique, jusqu’à l’obtention du baccalauréat.': 'Three years of high school following a science-focused curriculum, leading to the French Baccalaureate.',
+  'De septembre 2019 à juin 2022, trois années de lycée dans un parcours scientifique, jusqu’à l’obtention du baccalauréat.': 'From September 2019 to June 2022, three years of high school following a science-focused curriculum, leading to the French Baccalaureate.',
   'Lycée': 'High school',
   'Sciences': 'Science',
   'Physique-chimie': 'Physics and chemistry',
@@ -276,6 +278,7 @@ const attributeTranslations = {
   'Navigation principale': 'Main navigation',
   'Photo de profil de Thomas DE GUZMAN': 'Profile photo of Thomas DE GUZMAN',
   'Frise chronologique de 2020 à 2028': 'Timeline from 2020 to 2028',
+  'Frise chronologique de 2019 à 2028': 'Timeline from 2019 to 2028',
   'Retour en haut': 'Back to top',
   'Fermer les détails': 'Close details'
 };
