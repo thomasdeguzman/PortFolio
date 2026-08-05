@@ -89,6 +89,7 @@ if (timelineElement) {
       end: today.toISOString().slice(0, 10), futureEnd: graduationDate,
       label: 'SeaTech<br><span class="journey-label-secondary">Cycle ingénieur</span>', dateLabel: 'Sept. 2024 – sept. 2027', title: 'Cycle ingénieur SeaTech',
       description: 'Formation d’ingénieur en mécanique, modélisation, calcul scientifique et simulation numérique à SeaTech – Université de Toulon.',
+      institution: 'SeaTech — Université de Toulon',
       badges: ['Mécanique des fluides', 'CFD', 'Calcul scientifique', 'Programmation'],
       lane: 139, labelPosition: 'above', labelTop: -58
     },

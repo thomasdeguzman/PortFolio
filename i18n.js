@@ -6,6 +6,7 @@ const translations = new Map(Object.entries({
   'Diplômes et certifications': 'Degrees and certifications',
   'Étudiant ingénieur en mécanique des fluides, CFD et simulation numérique': 'Engineering student in fluid mechanics, CFD and numerical simulation',
   'SeaTech – Université de Toulon': 'SeaTech – University of Toulon',
+  'SeaTech — Université de Toulon': 'SeaTech — University of Toulon',
   'Actuellement en dernière année à SeaTech – Université de Toulon, je présente ici une sélection des projets et travaux réalisés au cours de ma formation, ainsi que quelques réalisations personnelles.': 'Currently in my final year at SeaTech – University of Toulon, I present here a selection of the projects and work completed during my studies, along with several personal projects.',
   'Voir mes projets': 'View my projects',
   'Me contacter': 'Contact me',
