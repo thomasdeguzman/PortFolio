@@ -49,7 +49,7 @@ backToTopButton?.addEventListener('click', () => {
 const timelineElement = document.querySelector('#journey-timeline');
 
 if (timelineElement) {
-  const TIMELINE_START = new Date('2019-09-01T00:00:00');
+  const TIMELINE_START = new Date('2019-01-01T00:00:00');
   const TIMELINE_END = new Date('2028-12-31T23:59:59');
   const today = new Date();
   const seatechStart = '2024-09-01';
