@@ -913,50 +913,6 @@ img {
   transform: translateY(0);
 }
 
-/* Project Summary Styles */
-.project-summary {
-  margin: 0.75rem 0;
-  padding: 1rem;
-  background: #f0f4f8;
-  border-left: 3px solid var(--primary);
-  border-radius: 0.6rem;
-  font-size: 0.95rem;
-}
-
-.project-summary summary {
-  cursor: pointer;
-  font-weight: 600;
-  color: var(--primary-dark);
-  user-select: none;
-  padding: 0.4rem 0;
-  transition: color 0.2s ease;
-  outline: none;
-}
-
-.project-summary summary:hover {
-  color: var(--primary);
-}
-
-.project-summary[open] summary {
-  margin-bottom: 0.75rem;
-}
-
-.project-summary-content {
-  color: var(--muted);
-}
-
-.project-summary-item {
-  margin-bottom: 0.6rem;
-  line-height: 1.5;
-}
-
-.project-summary-item strong {
-  color: var(--primary-dark);
-  display: inline-block;
-  min-width: 110px;
-  font-weight: 600;
-}
-
 @media (max-width: 860px) {
   .hero-grid,
   .about-grid,
