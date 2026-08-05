@@ -60,7 +60,7 @@ if (timelineElement) {
       id: 'lycee', type: 'period', category: 'lycee', start: '2020-01-01', end: '2022-06-30',
       label: '2de / 1re / Tle scientifique', dateLabel: 'Janv. 2020 – juin 2022', title: 'Lycée – parcours scientifique',
       description: 'Trois années de lycée dans un parcours scientifique, jusqu’à l’obtention du baccalauréat.',
-      badges: ['Lycée', 'Sciences', 'Mathématiques', 'Physique'],
+      badges: ['Mathématiques', 'Physique-chimie', 'Sciences de l’ingénieur', 'Option maths expertes'],
       lane: 139, labelPosition: 'below', labelTop: 38
     },
     {

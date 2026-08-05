@@ -180,6 +180,8 @@ const translations = new Map(Object.entries({
   'Trois années de lycée dans un parcours scientifique, jusqu’à l’obtention du baccalauréat.': 'Three years of high school following a science-focused curriculum, leading to the French Baccalaureate.',
   'Lycée': 'High school',
   'Sciences': 'Science',
+  'Physique-chimie': 'Physics and chemistry',
+  'Option maths expertes': 'Advanced mathematics elective',
   'Obtention du BIA, validant des connaissances générales dans le domaine de l’aéronautique.': 'Awarded the BIA, validating general knowledge in aeronautics.',
   'Diplôme': 'Degree',
   'Aéronautique': 'Aeronautics',
