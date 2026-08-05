@@ -152,6 +152,7 @@ const translations = new Map(Object.entries({
   'LinkedIn :': 'LinkedIn:',
   'GitHub :': 'GitHub:',
   'Localisation :': 'Location:',
+  'Établissement :': 'School:',
   'Profil LinkedIn': 'LinkedIn profile',
   'Profil GitHub': 'GitHub profile',
   'Envoyer un email': 'Send an email',

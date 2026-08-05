@@ -817,6 +817,16 @@ img {
 
 .journey-detail h3 { margin: 0 2.5rem 0.45rem 0; color: var(--primary-dark); }
 .journey-detail p { margin: 0 0 0.75rem; }
+.journey-detail .journey-detail-institution {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: -0.15rem 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.journey-detail-institution i { color: var(--primary); }
+.journey-detail-institution span { font-weight: 600; }
 .journey-detail ul { margin: 0 0 0.8rem; padding-left: 1.1rem; }
 .journey-detail .tags span { color: var(--primary-dark); background: var(--light); }
 .journey-detail .btn { width: fit-content; margin-top: 0.85rem; }

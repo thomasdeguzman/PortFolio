@@ -60,6 +60,7 @@ if (timelineElement) {
       id: 'lycee', type: 'period', category: 'lycee', start: '2019-09-01', end: '2022-06-30',
       label: '2de / 1re / Tle scientifique', dateLabel: 'Sept. 2019 – juin 2022', title: 'Lycée – parcours scientifique',
       description: 'De septembre 2019 à juin 2022, trois années de lycée dans un parcours scientifique, jusqu’à l’obtention du baccalauréat.',
+      institution: 'Lycée Alfred Kastler — Talence',
       badges: ['Mathématiques', 'Physique-chimie', 'Sciences de l’ingénieur', 'Option maths expertes'],
       lane: 139, labelPosition: 'above', labelTop: -42, labelShift: 36
     },
@@ -79,6 +80,7 @@ if (timelineElement) {
       id: 'prepa', type: 'period', category: 'prepa', start: '2022-09-01', end: '2024-06-30',
       label: 'Classe préparatoire', dateLabel: 'Sept. 2022 – juin 2024', title: 'Classe préparatoire PCSI – PSI',
       description: 'Deux années de classe préparatoire durant lesquelles j’ai développé de solides bases en mathématiques, physique, mécanique et sciences de l’ingénieur.',
+      institution: 'Lycée Gustave Eiffel — Bordeaux',
       badges: ['Mathématiques', 'Physique', 'Mécanique', 'Sciences de l’ingénieur', 'Méthodes de travail'],
       lane: 139, labelPosition: 'above', labelTop: -42
     },
@@ -300,6 +302,7 @@ if (timelineElement) {
     });
 
     const imageMarkup = item.image ? `<img class="journey-detail-image" src="${item.image}" alt="Illustration de ${item.title}">` : '';
+    const institutionMarkup = item.institution ? `<p class="journey-detail-institution"><i class="fas fa-school" aria-hidden="true"></i><span>Établissement :</span> ${item.institution}</p>` : '';
     const pointsMarkup = item.points?.length ? `<ul>${item.points.map((point) => `<li>${point}</li>`).join('')}</ul>` : '';
     const badgesMarkup = item.badges?.length ? `<div class="tags">${item.badges.map((badge) => `<span>${badge}</span>`).join('')}</div>` : '';
     const linkMarkup = item.link ? `<a class="btn btn-primary" href="${item.link}">Voir le projet</a>` : '';
@@ -310,6 +313,7 @@ if (timelineElement) {
       <div class="journey-detail-content">
         <p class="journey-detail-date">${item.dateLabel}</p>
         <h3>${item.title}</h3>
+        ${institutionMarkup}
         <p>${item.description}</p>
         ${pointsMarkup}${badgesMarkup}${linkMarkup}
       </div>
