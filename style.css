@@ -411,6 +411,7 @@ img {
 }
 
 .journey-section {
+  --journey-lycee: #739bc3;
   --journey-prepa: #3fb8a8;
   --journey-seatech: #4f8fe8;
   --journey-work: #d89a53;
@@ -582,6 +583,7 @@ img {
 }
 
 .journey-event.category-prepa { --journey-color: var(--journey-prepa); }
+.journey-event.category-lycee { --journey-color: var(--journey-lycee); }
 .journey-event.category-seatech { --journey-color: var(--journey-seatech); }
 .journey-event.category-work { --journey-color: var(--journey-work); }
 .journey-event.category-mobility { --journey-color: var(--journey-mobility); }

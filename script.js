@@ -57,6 +57,13 @@ if (timelineElement) {
 
   const timelineData = [
     {
+      id: 'lycee', type: 'period', category: 'lycee', start: '2020-01-01', end: '2022-06-30',
+      label: '2de / 1re / Tle scientifique', dateLabel: 'Janv. 2020 – juin 2022', title: 'Lycée – parcours scientifique',
+      description: 'Trois années de lycée dans un parcours scientifique, jusqu’à l’obtention du baccalauréat.',
+      badges: ['Lycée', 'Sciences', 'Mathématiques', 'Physique'],
+      lane: 118, labelPosition: 'below', labelTop: 38
+    },
+    {
       id: 'bia', type: 'event', category: 'formation', start: '2020-07-01',
       label: 'BIA', dateLabel: 'Juillet 2020', title: 'Brevet d’Initiation Aéronautique',
       description: 'Obtention du BIA, validant des connaissances générales dans le domaine de l’aéronautique.',
