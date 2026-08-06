@@ -174,7 +174,7 @@ if (timelineElement) {
       id: 'report-naca', type: 'event', category: 'seatech', start: '2026-04-29',
       label: 'NACA 4412', dateLabel: '29 avril 2026', title: 'Simulation CFD d’un profil NACA 4412',
       description: 'Modélisation turbulente RANS, analyse des coefficients aérodynamiques et étude de convergence de maillage.',
-      badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-naca4412.png',
+      badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-naca4412.png?v=2',
       link: '#project-naca4412', compact: true, report: true, directLink: true, lane: 147
     },
     {
