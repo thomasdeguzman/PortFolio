@@ -1,4 +1,9 @@
 const translations = new Map(Object.entries({
+  "Étude hydrodynamique d'une torpille sous OpenFOAM": 'Hydrodynamic study of a torpedo using OpenFOAM',
+  "Simulation 3D d'un écoulement laminaire incompressible autour d'une torpille MK13, raffinement du maillage et analyse des champs de pression, de vitesse et des lignes de courant.": '3D simulation of incompressible laminar flow around an MK13 torpedo, mesh refinement and analysis of pressure fields, velocity fields and streamlines.',
+  '21 avril 2026': '21 April 2026',
+  'Torpille MK13': 'MK13 torpedo',
+  'Champ de pression autour de la torpille MK13': 'Pressure field around the MK13 torpedo',
   'À propos': 'About',
   'Projets étudiants': 'Academic projects',
   'Projets personnels': 'Personal projects',

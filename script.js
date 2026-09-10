@@ -178,6 +178,13 @@ if (timelineElement) {
       link: '#project-naca4412', compact: true, report: true, directLink: true, lane: 147
     },
     {
+      id: 'report-torpille', type: 'event', category: 'seatech', start: '2026-04-21',
+      label: 'Torpille MK13', dateLabel: '21 avril 2026', title: 'Étude hydrodynamique d\'une torpille sous OpenFOAM',
+      description: 'Simulation 3D d\'un écoulement laminaire incompressible autour d\'une torpille MK13, raffinement du maillage et analyse des champs de pression, de vitesse et des lignes de courant.',
+      badges: ['OpenFOAM', 'Hydrodynamique', 'ParaView'], image: 'assets/images/project-torpille.jpg',
+      link: '#project-torpille', compact: true, report: true, directLink: true, lane: 169
+    },
+    {
       id: 'report-shock', type: 'event', category: 'seatech', start: '2026-03-27',
       label: 'Amortisseur', dateLabel: '27 mars 2026', title: 'Amortisseur de choc à lames',
       description: 'Modélisation et analyse numérique d’un système mécanique avec le logiciel Abaqus.',
