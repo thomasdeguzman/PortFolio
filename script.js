@@ -111,28 +111,28 @@ if (timelineElement) {
       id: 'report-interpolation', type: 'event', category: 'seatech', start: '2025-04-10',
       label: 'Interpolation', dateLabel: '10 avril 2025', title: 'Étude numérique de l’interpolation',
       description: 'Interpolation polynomiale, points de Tchebychev et fonctions splines.',
-      badges: ['MATLAB', 'Interpolation', 'Splines'], image: 'assets/images/project-interpolation.svg',
+      badges: ['MATLAB', 'Interpolation', 'Splines'], image: 'assets/images/project-interpolation.png',
       link: '#project-interpolation', compact: true, report: true, directLink: true, lane: 125
     },
     {
       id: 'report-ode', type: 'event', category: 'seatech', start: '2025-04-23',
       label: 'Équations différentielles', dateLabel: '23 avril 2025', title: 'Résolution numérique d’équations différentielles',
       description: 'Étude des schémas d’Euler explicite et implicite pour un problème de Cauchy.',
-      badges: ['MATLAB', 'Euler', 'Convergence'], image: 'assets/images/project-ode.svg',
+      badges: ['MATLAB', 'Euler', 'Convergence'], image: 'assets/images/project-ode.png',
       link: '#project-ode', compact: true, report: true, directLink: true, lane: 147
     },
     {
       id: 'report-integration', type: 'event', category: 'seatech', start: '2025-05-27',
       label: 'Intégration numérique', dateLabel: '27 mai 2025', title: 'Étude des méthodes d’intégration numérique',
       description: 'Comparaison de plusieurs méthodes de quadrature numérique.',
-      badges: ['MATLAB', 'Quadrature', 'Analyse d’erreur'], image: 'assets/images/project-integration.svg',
+      badges: ['MATLAB', 'Quadrature', 'Analyse d’erreur'], image: 'assets/images/project-integration.png',
       link: '#project-integration', compact: true, report: true, directLink: true, lane: 169
     },
     {
       id: 'report-transport', type: 'event', category: 'seatech', start: '2025-06-10',
       label: 'Équation de transport', dateLabel: '10 juin 2025', title: 'Résolution numérique d’équations aux dérivées partielles',
       description: 'Étude de schémas aux différences finies appliqués à l’équation de transport.',
-      badges: ['EDP', 'Différences finies', 'Stabilité'], image: 'assets/images/project-transport.svg',
+      badges: ['EDP', 'Différences finies', 'Stabilité'], image: 'assets/images/project-transport.png',
       link: '#project-transport', compact: true, report: true, directLink: true, lane: 125
     },
     {
@@ -181,7 +181,7 @@ if (timelineElement) {
       id: 'report-torpille', type: 'event', category: 'seatech', start: '2026-04-21',
       label: 'Torpille MK13', dateLabel: '21 avril 2026', title: 'Étude hydrodynamique d\'une torpille sous OpenFOAM',
       description: 'Simulation 3D d\'un écoulement laminaire incompressible autour d\'une torpille MK13, raffinement du maillage et analyse des champs de pression, de vitesse et des lignes de courant.',
-      badges: ['OpenFOAM', 'Hydrodynamique', 'ParaView'], image: 'assets/images/project-torpille.jpg',
+      badges: ['OpenFOAM', 'Hydrodynamique', 'ParaView'], image: 'assets/images/project-torpille.png',
       link: '#project-torpille', compact: true, report: true, directLink: true, lane: 169
     },
     {
