@@ -193,14 +193,14 @@ if (timelineElement) {
     },
     {
       id: 'report-ls0417', type: 'event', category: 'seatech', start: '2026-08-23',
-      label: 'LS-0417', dateLabel: '23 août 2026', title: 'Impact d’un profil évolutif sur l’aile LS-0417',
+      label: 'LS-0417', dateLabel: '23 août 2026', title: 'Développement et validation d’une méthodologie CFD pour l’étude aérodynamique du profil LS-0417 avec flap',
       description: 'Simulations CFD 2D et 3D sous OpenFOAM, puis validation expérimentale en soufflerie.',
       badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-ls0417.png',
       link: '#project-ls0417', compact: true, report: true, directLink: true, lane: 147
     },
     {
       id: 'prague', type: 'period', category: 'mobility', start: '2026-05-01', end: '2026-08-31',
-      label: 'Stage à Prague', dateLabel: 'Mai – août 2026', title: 'Stage à Prague – CTU',
+      label: 'Stage à Prague', dateLabel: 'Mai – août 2026', title: 'Développement et validation d’une méthodologie CFD pour l’étude aérodynamique du profil LS-0417 avec flap',
       description: 'Stage académique au Czech Technical University in Prague consacré à la simulation numérique et à la caractérisation aérodynamique de profils d’ailes.',
       points: ['Simulations CFD sous OpenFOAM', 'Étude du profil LS-0417', 'Analyse des coefficients aérodynamiques', 'Outils Python de post-traitement', 'Comparaison de configurations de profils évolutifs'],
       badges: ['OpenFOAM', 'CFD', 'Python', 'Linux', 'Aérodynamique', 'Analyse de données'],

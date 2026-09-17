@@ -64,7 +64,7 @@ const translations = new Map(Object.entries({
   'aéronautique': 'aeronautics',
   'parcours scientifique': 'scientific studies',
   'EDP': 'PDEs',
-  'Étude de l\'impact d\'un profil évolutif sur le profil d\'aile LS-0417': 'Study of the impact of a morphing profile on the LS-0417 airfoil',
+  'Développement et validation d’une méthodologie CFD pour l’étude aérodynamique du profil LS-0417 avec flap': 'Development and validation of a CFD methodology for the aerodynamic study of the LS-0417 airfoil with a flap',
   'Simulations CFD sous OpenFOAM pour la caractérisation aérodynamique et la validation de profils évolutifs. Études numériques 2D et 3D puis validation expérimentale en soufflerie.': 'OpenFOAM CFD simulations for aerodynamic characterisation and validation of morphing profiles. Two- and three-dimensional numerical studies followed by experimental wind-tunnel validation.',
   "Caractériser le comportement aérodynamique du profil LS-0417 par simulation numérique.": 'Characterise the aerodynamic behaviour of the LS-0417 airfoil through numerical simulation.',
   "Génération du maillage, mise en place des cas OpenFOAM, simulations pour différents angles d'attaque et post-traitement des résultats.": 'Mesh generation, OpenFOAM case setup, simulations at different angles of attack and post-processing of results.',
