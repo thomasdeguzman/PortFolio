@@ -1,4 +1,20 @@
 const translations = new Map(Object.entries({
+  'Interaction fluide–structure : influence du confinement sur la masse ajoutée par éléments finis': 'Fluid–structure interaction: influence of confinement on added mass using finite elements',
+  'Étude de l’influence du confinement sur la masse ajoutée d’une structure oscillant dans un fluide. Résolution analytique du cas circulaire puis résolution par éléments finis P1 sous FreeFEM++ pour des géométries circulaire et carrée, avec validation numérique et analyse de l’évolution de la masse ajoutée.': 'Study of the influence of confinement on the added mass of a structure oscillating in a fluid. Analytical solution of the circular configuration followed by a P1 finite-element solution with FreeFEM++ for circular and square geometries, including numerical validation and analysis of the added-mass evolution.',
+  '1 octobre 2026': '1 October 2026',
+  'éléments finis P1': 'P1 finite elements',
+  'interaction fluide–structure': 'fluid–structure interaction',
+  'masse ajoutée': 'added mass',
+  'Écoulement de Darcy en milieu poreux multicouche : résolution par volumes finis': 'Darcy flow in a multilayer porous medium: finite-volume solution',
+  'Modélisation 2D d’un écoulement incompressible dans un milieu poreux hétérogène constitué de trois couches géologiques. Résolution de la loi de Darcy par la méthode des volumes finis sur maillages triangulaire et cartésien, calcul des champs de pression et de vitesse et étude de convergence.': "Two-dimensional modelling of incompressible flow through a heterogeneous porous medium composed of three geological layers. Finite-volume solution of Darcy's law on triangular and Cartesian meshes, including pressure and velocity fields and a convergence study.",
+  'loi de Darcy': "Darcy's law",
+  'milieux poreux': 'porous media',
+  'Consulter le compte rendu': 'View report',
+  'Résolution de l’équation de transport 1D par caractéristiques et différences finies': 'Solution of the 1D transport equation using characteristics and finite differences',
+  'Résolution de l’équation de transport linéaire 1D par la méthode des caractéristiques, utilisée comme solution de référence, puis comparaison de plusieurs schémas aux différences finies. Analyse de la stabilité CFL, de la diffusion numérique, des oscillations et de la convergence en norme L2.': 'Solution of the one-dimensional linear transport equation using the method of characteristics as a reference solution, followed by a comparison of several finite-difference schemes. Analysis of CFL stability, numerical diffusion, oscillations and L2 convergence.',
+  'méthode des caractéristiques': 'method of characteristics',
+  'stabilité CFL': 'CFL stability',
+  'Voir le compte rendu': 'View report',
   "Développement et validation d’une méthodologie CFD RANS pour le profil LS-0417 à flap : influence du maillage, du y⁺ et des conditions de soufflerie": "Development and validation of a RANS CFD methodology for the LS-0417 airfoil with a flap: effects of mesh, y⁺ and wind-tunnel conditions",
   "Caractérisation aérodynamique du profil NACA 4412 par CFD 2D : comparaison laminaire–RANS et convergence de maillage": "Aerodynamic characterisation of the NACA 4412 airfoil using 2D CFD: laminar–RANS comparison and mesh convergence",
   "Simulation CFD 3D d’un écoulement laminaire autour d’une torpille MK13 à Re = 1500 : analyse du sillage et des champs hydrodynamiques": "3D CFD simulation of laminar flow around an MK13 torpedo at Re = 1500: analysis of the wake and hydrodynamic fields",
@@ -294,6 +310,9 @@ const translations = new Map(Object.entries({
 }));
 
 const attributeTranslations = {
+  "Influence du confinement sur la masse ajoutée d'une structure oscillante": 'Influence of confinement on the added mass of an oscillating structure',
+  'Écoulement de Darcy dans un milieu poreux multicouche résolu par volumes finis': 'Finite-volume simulation of Darcy flow through a multilayer porous medium',
+  "Comparaison de schémas numériques pour l'équation de transport 1D": 'Comparison of numerical schemes for the 1D transport equation',
   'Ouvrir le menu': 'Open menu',
   'Navigation principale': 'Main navigation',
   'Photo de profil de Thomas DE GUZMAN': 'Profile photo of Thomas DE GUZMAN',
