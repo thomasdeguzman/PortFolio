@@ -1,4 +1,5 @@
 const translations = new Map(Object.entries({
+  'mars 2026': 'March 2026',
   'Interaction fluide–structure : influence du confinement sur la masse ajoutée par éléments finis': 'Fluid–structure interaction: influence of confinement on added mass using finite elements',
   'Étude de l’influence du confinement sur la masse ajoutée d’une structure oscillant dans un fluide. Résolution analytique du cas circulaire puis résolution par éléments finis P1 sous FreeFEM++ pour des géométries circulaire et carrée, avec validation numérique et analyse de l’évolution de la masse ajoutée.': 'Study of the influence of confinement on the added mass of a structure oscillating in a fluid. Analytical solution of the circular configuration followed by a P1 finite-element solution with FreeFEM++ for circular and square geometries, including numerical validation and analysis of the added-mass evolution.',
   '1 octobre 2026': '1 October 2026',
