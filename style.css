@@ -652,6 +652,11 @@ img {
   display: none;
 }
 
+/* Keep dates on the same baseline even when translated titles wrap. */
+.journey-event-label.is-above {
+  transform: translate(-50%, -100%);
+}
+
 .journey-event.is-compact .journey-marker {
   top: 18px;
   width: 9px;
@@ -674,12 +679,24 @@ img {
   min-height: 10px;
 }
 
+.journey-event.is-report::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  height: var(--report-stem-height, 0px);
+  border-left: 1px solid var(--journey-color);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .journey-event-date {
   display: block;
   margin-top: 0.2rem;
   color: var(--muted);
   font-size: 0.66rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .journey-label-secondary {

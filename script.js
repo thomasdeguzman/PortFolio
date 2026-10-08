@@ -101,104 +101,6 @@ if (timelineElement) {
       image: 'assets/images/project-seagale.jpg', lane: 160, compact: true, displayWidth: 2.2
     },
     {
-      id: 'report-tipe', type: 'event', category: 'prepa', start: '2024-07-02',
-      label: 'TIPE Halo F1', dateLabel: '2 juillet 2024', title: 'Analyse des compromis aérodynamiques et structurels dans la conception du Halo de Formule 1',
-      description: 'Étude des choix de conception du halo et de son rôle dans la protection du pilote.',
-      badges: ['TIPE', 'Modélisation', 'Expérimentation'], image: 'assets/images/project-TIPE.png',
-      link: '#project-tipe', compact: true, report: true, directLink: true, lane: 147, timelinePosition: '2024-06-30'
-    },
-    {
-      id: 'report-interpolation', type: 'event', category: 'seatech', start: '2025-04-10',
-      label: 'Interpolation', dateLabel: '10 avril 2025', title: 'Interpolation polynomiale et par splines : analyse du phénomène de Runge et influence des nœuds de Tchebychev',
-      description: 'Interpolation polynomiale, points de Tchebychev et fonctions splines.',
-      badges: ['MATLAB', 'Interpolation', 'Splines'], image: 'assets/images/project-interpolation.png',
-      link: '#project-interpolation', compact: true, report: true, directLink: true, lane: 125
-    },
-    {
-      id: 'report-ode', type: 'event', category: 'seatech', start: '2025-04-23',
-      label: 'Équations différentielles', dateLabel: '23 avril 2025', title: 'Analyse de stabilité et d’ordre de convergence des schémas d’Euler et de Runge–Kutta pour des EDO du premier ordre',
-      description: 'Étude des schémas d’Euler explicite et implicite pour un problème de Cauchy.',
-      badges: ['MATLAB', 'Euler', 'Convergence'], image: 'assets/images/project-ode.png',
-      link: '#project-ode', compact: true, report: true, directLink: true, lane: 147
-    },
-    {
-      id: 'report-integration', type: 'event', category: 'seatech', start: '2025-05-27',
-      label: 'Intégration numérique', dateLabel: '27 mai 2025', title: 'Analyse d’erreur et d’ordre de convergence des méthodes de quadrature : rectangles, point milieu, trapèzes et Simpson',
-      description: 'Comparaison de plusieurs méthodes de quadrature numérique.',
-      badges: ['MATLAB', 'Quadrature', 'Analyse d’erreur'], image: 'assets/images/project-integration.png',
-      link: '#project-integration', compact: true, report: true, directLink: true, lane: 169
-    },
-    {
-      id: 'report-transport', type: 'event', category: 'seatech', start: '2025-06-10',
-      label: 'Équation de transport', dateLabel: '10 juin 2025', title: 'Analyse de consistance, stabilité et diffusion–dispersion numériques de schémas aux différences finies pour l’équation de transport 1D',
-      description: 'Étude de schémas aux différences finies appliqués à l’équation de transport.',
-      badges: ['EDP', 'Différences finies', 'Stabilité'], image: 'assets/images/project-transport.png',
-      link: '#project-transport', compact: true, report: true, directLink: true, lane: 125
-    },
-    {
-      id: 'report-manta', type: 'event', category: 'seatech', start: '2025-06-13',
-      label: 'Projet MANTA', dateLabel: '13 juin 2025', title: 'Analyse des phénomènes hydrodynamiques de surface libre et des contraintes structurelles du drone marin MANTA',
-      description: 'Étude structurelle et hydrodynamique d’un drone sous-marin.',
-      badges: ['Hydrodynamique', 'Structure', 'Travail en équipe'], image: 'assets/images/project-manta.png',
-      link: '#project-manta', compact: true, report: true, directLink: true, lane: 169
-    },
-    {
-      id: 'report-seagale', type: 'event', category: 'seatech', start: '2025-08-18',
-      label: 'Rapport SEAGALE', dateLabel: '18 août 2025', title: 'Stage ouvrier chez SEAGALE',
-      description: 'Rapport consacré à la découverte du milieu industriel et des pratiques de production.',
-      badges: ['Stage', 'Industrie', 'Organisation'], image: 'assets/images/project-seagale.jpg',
-      link: '#project-seagale', compact: true, report: true, directLink: true, lane: 147
-    },
-    {
-      id: 'report-heat-2d', type: 'event', category: 'seatech', start: '2025-10-13',
-      label: 'Chaleur 2D', dateLabel: '13 octobre 2025', title: 'Résolution du problème de Dirichlet pour l’équation de Laplace 2D par différences finies en Fortran90',
-      description: 'Résolution par différences finies de l’équation de la chaleur en deux dimensions.',
-      badges: ['Fortran90', 'Différences finies'], image: 'assets/images/project-heat-eq-2d.png',
-      link: '#project-heat-2d', compact: true, report: true, directLink: true, lane: 147
-    },
-    {
-      id: 'report-heat-1d', type: 'event', category: 'seatech', start: '2025-11-10',
-      label: 'Chaleur 1D', dateLabel: '10 novembre 2025', title: 'Résolution transitoire de l’équation de la chaleur 1D par schémas d’Euler et de Crank–Nicolson : stabilité et convergence',
-      description: 'Comparaison de schémas numériques pour un problème de diffusion thermique.',
-      badges: ['Fortran90', 'Différences finies'], image: 'assets/images/project-heat-eq-1d.png',
-      link: '#project-heat-1d', compact: true, report: true, directLink: true, lane: 125
-    },
-    {
-      id: 'report-elliptic', type: 'event', category: 'seatech', start: '2025-12-20',
-      label: 'Problème elliptique', dateLabel: '20 décembre 2025', title: 'Approximation variationnelle de l’équation de Laplace 2D par éléments finis quadrangulaires Q1 et étude de convergence',
-      description: 'Résolution de l’équation de Laplace par la méthode des éléments finis.',
-      badges: ['Éléments finis', 'Fortran', 'VisIt'], image: 'assets/images/project-elliptic-fem.png',
-      link: '#project-elliptic-fem', compact: true, report: true, directLink: true, lane: 169
-    },
-    {
-      id: 'report-naca', type: 'event', category: 'seatech', start: '2026-04-29',
-      label: 'NACA 4412', dateLabel: '29 avril 2026', title: 'Caractérisation aérodynamique du profil NACA 4412 par CFD 2D : comparaison laminaire–RANS et convergence de maillage',
-      description: 'Modélisation turbulente RANS, analyse des coefficients aérodynamiques et étude de convergence de maillage.',
-      badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-naca4412.png?v=2',
-      link: '#project-naca4412', compact: true, report: true, directLink: true, lane: 147
-    },
-    {
-      id: 'report-torpille', type: 'event', category: 'seatech', start: '2026-04-21',
-      label: 'Torpille MK13', dateLabel: '21 avril 2026', title: 'Simulation CFD 3D d’un écoulement laminaire autour d’une torpille MK13 à Re = 1500 : analyse du sillage et des champs hydrodynamiques',
-      description: 'Simulation 3D d\'un écoulement laminaire incompressible autour d\'une torpille MK13, raffinement du maillage et analyse des champs de pression, de vitesse et des lignes de courant.',
-      badges: ['OpenFOAM', 'Hydrodynamique', 'ParaView'], image: 'assets/images/project-torpille.png',
-      link: '#project-torpille', compact: true, report: true, directLink: true, lane: 169
-    },
-    {
-      id: 'report-shock', type: 'event', category: 'seatech', start: '2026-03-27',
-      label: 'Amortisseur', dateLabel: '27 mars 2026', title: 'Simulation dynamique explicite d’un absorbeur de choc élastoplastique avec contact et frottement par éléments finis',
-      description: 'Modélisation et analyse numérique d’un système mécanique avec le logiciel Abaqus.',
-      badges: ['Abaqus', 'Éléments finis', 'Mécanique'], image: 'assets/images/project-shock-absorber.png',
-      link: '#project-shock-absorber', compact: true, report: true, directLink: true, lane: 125
-    },
-    {
-      id: 'report-ls0417', type: 'event', category: 'seatech', start: '2026-08-23',
-      label: 'LS-0417', dateLabel: '23 août 2026', title: 'Développement et validation d’une méthodologie CFD RANS pour le profil LS-0417 à flap : influence du maillage, du y⁺ et des conditions de soufflerie',
-      description: 'Simulations CFD 2D et 3D sous OpenFOAM, puis validation expérimentale en soufflerie.',
-      badges: ['OpenFOAM', 'CFD', 'Aérodynamique'], image: 'assets/images/project-ls0417.png',
-      link: '#project-ls0417', compact: true, report: true, directLink: true, lane: 147
-    },
-    {
       id: 'prague', type: 'period', category: 'mobility', start: '2026-05-01', end: '2026-08-31',
       label: 'Stage à Prague', dateLabel: 'Mai – août 2026', title: 'Développement et validation d’une méthodologie CFD RANS pour le profil LS-0417 à flap : influence du maillage, du y⁺ et des conditions de soufflerie',
       description: 'Stage académique au Czech Technical University in Prague consacré à la simulation numérique et à la caractérisation aérodynamique de profils d’ailes.',
@@ -213,6 +115,26 @@ if (timelineElement) {
       badges: ['Objectif futur'], milestone: true, future: true, labelPosition: 'above', labelTop: -36
     }
   ];
+
+  // Read the French cards before i18n.js runs, so dates, images and reports stay in sync.
+  const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin',
+    'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+  document.querySelectorAll('#projects-students .project-card[id]').forEach((card) => {
+    const dateLabel = card.querySelector('.project-date')?.textContent.trim();
+    const parts = dateLabel?.toLowerCase().match(/^(?:(\d{1,2})\s+)?([a-zéû]+)\s+(\d{4})$/);
+    if (!parts || !months.includes(parts[2])) return;
+    // Month-only dates use the start of that month for positioning, without displaying a day.
+    const start = `${parts[3]}-${String(months.indexOf(parts[2]) + 1).padStart(2, '0')}-${(parts[1] || '1').padStart(2, '0')}`;
+    const title = card.querySelector('h4').textContent.trim();
+    timelineData.push({
+      id: `report-${card.id}`, type: 'event', category: Number(parts[3]) < 2025 ? 'prepa' : 'seatech',
+      start, dateLabel, title, label: title,
+      description: card.querySelector('p:not([class])')?.textContent.trim() || '',
+      badges: [...card.querySelectorAll('.tags span')].map((tag) => tag.textContent.trim()),
+      image: card.querySelector('img')?.getAttribute('src'),
+      link: `#${card.id}`, compact: true, report: true, directLink: true
+    });
+  });
 
   const yearsElement = document.querySelector('#journey-years');
   const itemsElement = document.querySelector('#journey-items');
@@ -229,15 +151,18 @@ if (timelineElement) {
     return Math.max(0, Math.min(100, ratio * 100));
   };
 
-  const reportPositions = new Map();
-  let previousReportPosition = -Infinity;
+  const reportLanes = new Map();
+  const laneEnds = [];
   timelineData
     .filter((item) => item.report)
     .sort((a, b) => new Date(a.start) - new Date(b.start))
     .forEach((item) => {
-      const adjustedPosition = Math.max(datePosition(item.timelinePosition ?? item.start), previousReportPosition + 1.1);
-      reportPositions.set(item.id, adjustedPosition);
-      previousReportPosition = adjustedPosition;
+      const position = datePosition(item.start);
+      // Separate nearby dots vertically instead of shifting their dates along the axis.
+      let lane = laneEnds.findIndex((end) => position - end >= 1.5);
+      if (lane === -1) lane = laneEnds.length;
+      laneEnds[lane] = position;
+      reportLanes.set(item.id, lane);
     });
 
   for (let year = 2019; year <= 2028; year += 1) {
@@ -250,7 +175,7 @@ if (timelineElement) {
 
   const makeEventButton = (item) => {
     const button = document.createElement('button');
-    const start = item.report ? reportPositions.get(item.id) : datePosition(item.start);
+    const start = datePosition(item.start);
     const end = item.end ? datePosition(item.end) : start;
     const isPeriod = item.type === 'period';
     button.type = 'button';
@@ -258,12 +183,14 @@ if (timelineElement) {
     button.dataset.timelineId = item.id;
     button.setAttribute('aria-label', `${item.title}, ${item.dateLabel}. ${item.directLink ? 'Aller au projet' : 'Afficher les détails'}`);
     button.style.left = isPeriod ? `${start}%` : `calc(${start}% - ${item.report ? 5 : 22}px)`;
-    button.style.top = `${item.report ? 150 : (item.lane ?? 133)}px`;
+    const top = item.report ? 150 - reportLanes.get(item.id) * 18 : (item.lane ?? 133);
+    button.style.top = `${top}px`;
+    if (item.report) button.style.setProperty('--report-stem-height', `${150 - top}px`);
     button.style.width = isPeriod ? `${item.displayWidth ?? Math.max(end - start, 1.2)}%` : item.report ? '10px' : '44px';
     button.style.height = item.report ? '10px' : '44px';
     button.innerHTML = `
       <span class="${isPeriod ? 'journey-period-bar' : 'journey-marker'}" aria-hidden="true"></span>
-      <span class="journey-event-label" style="top:${item.labelTop ?? (item.labelPosition === 'above' ? -28 : 38)}px;left:calc(50% + ${item.labelShift ?? 0}px)">${item.label}${item.showAxisDate === false ? '' : `<small class="journey-event-date">${item.dateLabel}</small>`}</span>
+      <span class="journey-event-label${item.labelPosition === 'above' ? ' is-above' : ''}" style="top:${item.labelPosition === 'above' ? 100 - top : 38}px;left:calc(50% + ${item.labelShift ?? 0}px)">${item.label}${item.showAxisDate === false ? '' : `<small class="journey-event-date">${item.dateLabel}</small>`}</span>
       <span class="journey-tooltip" role="tooltip">${item.title}<br>${item.dateLabel}</span>`;
 
     if (item.futureEnd) {
